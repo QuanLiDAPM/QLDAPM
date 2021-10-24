@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -50,18 +52,73 @@ namespace ShopRuou.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Loai_ID,Hang_ID,NoiSanXuat_ID,TenSanPham,NongDo,TheTich,NgayNhap,DonGia,SoLuong,MoTa,HinhAnhBia")] SanPham sanPham)
+        public ActionResult Create([Bind(Include = "ID,Loai_ID,Hang_ID,NoiSanXuat_ID,TenSanPham,NongDo,TheTich,NgayNhap,DonGia,SoLuong,MoTa,DuLieuHinhAnhBia")] SanPham sanPham)
         {
-            if (ModelState.IsValid)
-            {
-                db.SanPham.Add(sanPham);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
             ViewBag.Hang_ID = new SelectList(db.Hang, "id", "TenHang", sanPham.Hang_ID);
             ViewBag.Loai_ID = new SelectList(db.Loai, "ID", "TenLoai", sanPham.Loai_ID);
             ViewBag.NoiSanXuat_ID = new SelectList(db.NoiSanXuat, "id", "XuatXu", sanPham.NoiSanXuat_ID);
+            if (ModelState.IsValid)
+            {
+                // Upload
+                if (sanPham.DuLieuHinhAnhBia != null)
+                {
+                    string folder = "Images/";
+                    string fileExtension = Path.GetExtension(sanPham.DuLieuHinhAnhBia.FileName).ToLower();
+
+                    // Kiểm tra kiểu
+                    var fileTypeSupported = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                    if (!fileTypeSupported.Contains(fileExtension))
+                    {
+                        ModelState.AddModelError("UploadError", "Chỉ cho phép tập tin JPG, PNG, GIF!");
+                        return View(sanPham);
+                    }
+                    else if (sanPham.DuLieuHinhAnhBia.ContentLength > 2 * 1024 * 1024)
+                    {
+                        ModelState.AddModelError("UploadError", "Chỉ cho phép tập tin từ 2MB trở xuống!");
+                        return View(sanPham);
+                    }
+                    else
+                    {
+                        string fileName = Guid.NewGuid().ToString() + fileExtension;
+                        string filePath = Path.Combine(Server.MapPath("~/" + folder), fileName);
+                        sanPham.DuLieuHinhAnhBia.SaveAs(filePath);
+
+                        // Cập nhật đường dẫn vào CSDL
+                        sanPham.HinhAnhBia = folder + fileName;
+
+                        try
+                        {
+                            // Your code...
+                            // Could also be before try if you know the exception occurs in SaveChanges
+
+                            db.SanPham.Add(sanPham);
+                            db.SaveChanges();
+                        }
+                        catch (DbEntityValidationException e)
+                        {
+                            foreach (var eve in e.EntityValidationErrors)
+                            {
+                                Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                                    eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                                foreach (var ve in eve.ValidationErrors)
+                                {
+                                    Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                                        ve.PropertyName, ve.ErrorMessage);
+                                }
+                            }
+                            throw;
+                        }
+
+                        return RedirectToAction("Index");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("UploadError", "Hình ảnh bìa không được bỏ trống!");
+                    return View(sanPham);
+                }
+            }
+
             return View(sanPham);
         }
 
@@ -88,7 +145,7 @@ namespace ShopRuou.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Loai_ID,Hang_ID,NoiSanXuat_ID,TenSanPham,NongDo,TheTich,NgayNhap,DonGia,SoLuong,MoTa,HinhAnhBia")] SanPham sanPham)
+        public ActionResult Edit([Bind(Include = "ID,Loai_ID,Hang_ID,NoiSanXuat_ID,TenSanPham,NongDo,TheTich,NgayNhap,DonGia,SoLuong,MoTa,DuLieuHinhAnhBia")] SanPham sanPham)
         {
             if (ModelState.IsValid)
             {
