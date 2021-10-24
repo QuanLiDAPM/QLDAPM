@@ -136,7 +136,6 @@ D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.Razor.xml
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Newtonsoft.Json.xml
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Antlr3.Runtime.pdb
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.pdb
@@ -144,3 +143,67 @@ D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Buffers.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Memory.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
+D:\DOAN1\Alcohol\ShopRuou\bin\ShopRuou.dll.config
+D:\DOAN1\Alcohol\ShopRuou\bin\ShopRuou.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\ShopRuou.pdb
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csc.exe
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csc.exe.config
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csc.rsp
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csi.exe
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csi.exe.config
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csi.rsp
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Buffers.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Memory.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\vbc.exe
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\vbc.exe.config
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\vbc.rsp
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\VBCSCompiler.exe
+D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
+D:\DOAN1\Alcohol\ShopRuou\bin\Antlr3.Runtime.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.SqlServer.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\Newtonsoft.Json.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Helpers.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Mvc.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Optimization.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Razor.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Deployment.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Razor.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\WebGrease.dll
+D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.SqlServer.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\Newtonsoft.Json.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Helpers.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Mvc.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Optimization.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Razor.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Deployment.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Razor.xml
+D:\DOAN1\Alcohol\ShopRuou\bin\Antlr3.Runtime.pdb
+D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
+D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
+D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.dll
+D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.pdb
