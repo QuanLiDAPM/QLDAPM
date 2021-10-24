@@ -17,8 +17,8 @@ namespace ShopRuou.Controllers
         // GET: DatHang
         public ActionResult Index()
         {
-            var datHangs = db.DatHangs.Include(d => d.KhachHang).Include(d => d.TaiKhoan);
-            return View(datHangs.ToList());
+            var datHang = db.DatHang.Include(d => d.KhachHang).Include(d => d.TaiKhoan);
+            return View(datHang.ToList());
         }
 
         // GET: DatHang/Details/5
@@ -28,7 +28,7 @@ namespace ShopRuou.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            DatHang datHang = db.DatHangs.Find(id);
+            DatHang datHang = db.DatHang.Find(id);
             if (datHang == null)
             {
                 return HttpNotFound();
@@ -39,8 +39,8 @@ namespace ShopRuou.Controllers
         // GET: DatHang/Create
         public ActionResult Create()
         {
-            ViewBag.KhachHang_ID = new SelectList(db.KhachHangs, "ID", "HoTen");
-            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoans, "ID", "HoTen");
+            ViewBag.KhachHang_ID = new SelectList(db.KhachHang, "ID", "HoTen");
+            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoan, "ID", "HoTen");
             return View();
         }
 
@@ -53,13 +53,13 @@ namespace ShopRuou.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.DatHangs.Add(datHang);
+                db.DatHang.Add(datHang);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.KhachHang_ID = new SelectList(db.KhachHangs, "ID", "HoTen", datHang.KhachHang_ID);
-            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoans, "ID", "HoTen", datHang.TaiKhoan_ID);
+            ViewBag.KhachHang_ID = new SelectList(db.KhachHang, "ID", "HoTen", datHang.KhachHang_ID);
+            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoan, "ID", "HoTen", datHang.TaiKhoan_ID);
             return View(datHang);
         }
 
@@ -70,13 +70,13 @@ namespace ShopRuou.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            DatHang datHang = db.DatHangs.Find(id);
+            DatHang datHang = db.DatHang.Find(id);
             if (datHang == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.KhachHang_ID = new SelectList(db.KhachHangs, "ID", "HoTen", datHang.KhachHang_ID);
-            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoans, "ID", "HoTen", datHang.TaiKhoan_ID);
+            ViewBag.KhachHang_ID = new SelectList(db.KhachHang, "ID", "HoTen", datHang.KhachHang_ID);
+            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoan, "ID", "HoTen", datHang.TaiKhoan_ID);
             return View(datHang);
         }
 
@@ -93,8 +93,8 @@ namespace ShopRuou.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.KhachHang_ID = new SelectList(db.KhachHangs, "ID", "HoTen", datHang.KhachHang_ID);
-            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoans, "ID", "HoTen", datHang.TaiKhoan_ID);
+            ViewBag.KhachHang_ID = new SelectList(db.KhachHang, "ID", "HoTen", datHang.KhachHang_ID);
+            ViewBag.TaiKhoan_ID = new SelectList(db.TaiKhoan, "ID", "HoTen", datHang.TaiKhoan_ID);
             return View(datHang);
         }
 
@@ -105,7 +105,7 @@ namespace ShopRuou.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            DatHang datHang = db.DatHangs.Find(id);
+            DatHang datHang = db.DatHang.Find(id);
             if (datHang == null)
             {
                 return HttpNotFound();
@@ -118,8 +118,8 @@ namespace ShopRuou.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            DatHang datHang = db.DatHangs.Find(id);
-            db.DatHangs.Remove(datHang);
+            DatHang datHang = db.DatHang.Find(id);
+            db.DatHang.Remove(datHang);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

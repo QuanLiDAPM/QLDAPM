@@ -17,7 +17,7 @@ namespace ShopRuou.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KhachHang()
         {
-            this.DatHangs = new HashSet<DatHang>();
+            this.DatHang = new HashSet<DatHang>();
         }
     
         public int ID { get; set; }
@@ -28,6 +28,6 @@ namespace ShopRuou.Models
         public string MatKhau { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DatHang> DatHangs { get; set; }
+        public virtual ICollection<DatHang> DatHang { get; set; }
     }
 }

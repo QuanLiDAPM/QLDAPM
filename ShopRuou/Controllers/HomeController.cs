@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopRuou.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,11 @@ namespace ShopRuou.Controllers
 {
     public class HomeController : Controller
     {
+        private ShopRuouEntities db = new ShopRuouEntities();
         public ActionResult Index()
         {
-            return View();
+            List<SanPham> sanPham = db.SanPham.ToList();
+            return View(sanPham);
         }
 
         public ActionResult About()

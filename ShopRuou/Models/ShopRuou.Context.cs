@@ -25,14 +25,13 @@ namespace ShopRuou.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DatHang> DatHangs { get; set; }
+        public virtual DbSet<DatHang> DatHang { get; set; }
         public virtual DbSet<DatHang_ChiTiet> DatHang_ChiTiet { get; set; }
-        public virtual DbSet<Hang> Hangs { get; set; }
-        public virtual DbSet<KhachHang> KhachHangs { get; set; }
-        public virtual DbSet<Loai> Loais { get; set; }
-        public virtual DbSet<NoiSanXuat> NoiSanXuats { get; set; }
-        public virtual DbSet<SanPham> SanPhams { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
+        public virtual DbSet<Hang> Hang { get; set; }
+        public virtual DbSet<KhachHang> KhachHang { get; set; }
+        public virtual DbSet<Loai> Loai { get; set; }
+        public virtual DbSet<NoiSanXuat> NoiSanXuat { get; set; }
+        public virtual DbSet<SanPham> SanPham { get; set; }
+        public virtual DbSet<TaiKhoan> TaiKhoan { get; set; }
     }
 }
