@@ -136,6 +136,7 @@ D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.Razor.xml
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Newtonsoft.Json.xml
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Antlr3.Runtime.pdb
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.pdb
@@ -143,4 +144,3 @@ D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Buffers.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Memory.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
 D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
