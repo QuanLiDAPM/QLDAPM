@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<ShopRuou.Models.DatHang>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Đặt hàng";
 }
 
-<h2>Index</h2>
+<h2>Đặt hàng</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Thêm đơn hàng mới", "Create")
 </p>
-<table class="table">
+<table class="table table-bordered">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.DienThoaiGiaoHang)
@@ -44,7 +44,36 @@
             @Html.DisplayFor(modelItem => item.NgayDatHang)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TinhTrang)
+            @if (item.TinhTrang == 0)
+            {
+        <span>Đơn hàng mới</span> }
+                        else if (item.TinhTrang == 1)
+                        {
+        <span>Đang xác nhận</span> }
+                        else if (item.TinhTrang == 2)
+                        {
+        <span>Đã hủy</span> }
+                        else if (item.TinhTrang == 3)
+                        {
+        <span>Đang đóng gói</span> }
+                        else if (item.TinhTrang == 4)
+                        {
+        <span>Đang gởi vận chuyển</span> }
+                        else if (item.TinhTrang == 5)
+                        {
+        <span>Đang chuyển</span> }
+                        else if (item.TinhTrang == 6)
+                        {
+        <span>Thất bại</span> }
+                        else if (item.TinhTrang == 7)
+                        {
+        <span>Đang chuyển hoàn</span> }
+                        else if (item.TinhTrang == 8)
+                        {
+        <span>Đã chuyển hoàn</span> }
+                        else
+                        {
+        <span>Thành công</span>}
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.KhachHang.HoTen)

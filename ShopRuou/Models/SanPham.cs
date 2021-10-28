@@ -21,7 +21,7 @@ namespace ShopRuou.Models
         {
             this.DatHang_ChiTiet = new HashSet<DatHang_ChiTiet>();
         }
-    
+
         public int ID { get; set; }
         public Nullable<int> Loai_ID { get; set; }
         public Nullable<int> Hang_ID { get; set; }
@@ -29,7 +29,7 @@ namespace ShopRuou.Models
         public string TenSanPham { get; set; }
         public string TheTich { get; set; }
         public string NongDo { get; set; }
-       
+
         [Display(Name = "Ngày nhập")]
         [Required(ErrorMessage = "Ngày nhập không được bỏ trống!")]
         [DataType(DataType.Date)]

@@ -22,3 +22,20 @@ select,
 textarea {
     max-width: 280px;
 }
+.card-body > h5:hover {
+    color: #b00c45;
+}
+.card>img{
+    transition: transform .2s;
+
+}
+.card>img:hover{
+    transform: scale(1.1);
+ }
+.col-3{
+    min-height:540px;
+}
+.card-body > p {
+    color: #b00c45;
+    font-weight: bold;
+}

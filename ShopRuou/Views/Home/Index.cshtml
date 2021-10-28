@@ -1,5 +1,5 @@
 ﻿
-    @model IEnumerable<ShopRuou.Models.SanPham>
+@model IEnumerable<ShopRuou.Models.SanPham>
 @{
     ViewBag.Title = "Home Page";
 }
@@ -35,8 +35,8 @@
     </a>
 
 </div>
-<div class="img-bg">
-    <h5 class="card-header">@ViewBag.Title</h5>
+<div class="img-bg" style="border-bottom: 2px solid #b00c45;">
+    <h5 class="card-header" style="background-color: #fff; color: #b00c45;"> BLENDED SCOTCH WHISKY</h5>
 </div>
 <div class="card-body  ">
     <div class="card-deck">
@@ -44,7 +44,32 @@
         {
 
             <div class=" col-3" style="margin-bottom: 40px;  ">
-                <div class="card list-books " style="min-height: 456px; ">
+                <div class="card list-books  " style="min-height: 456px; color: #000000; ">
+                    <img src="~/@item.HinhAnhBia" class="card-img-top" alt="...">
+                    <div class="card-body al">
+                        <h5 class="card-title text-center">@item.TenSanPham</h5>
+                        <p class="card-text text-center">@String.Format("{0:N0}", item.DonGia) VNĐ</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="@Url.Action("Them", "GioHang", new { masp = item.ID })" class="btn btn-outline-danger"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</a>
+                        <a href="@Url.Action("ChiTietSanPham", "Home", new { masp = item.ID })" class="btn btn-outline-primary m-1">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+<div class="img-bg" style="border-bottom: 2px solid #b00c45;" >
+    <h5 class="card-header table border-bottom " style="background-color: #fff; color: #b00c45;">RƯỢU VANG NHẬP KHẨU</h5>
+</div>
+<div class="card-body  ">
+    <div class="card-deck">
+        @foreach (var item in Model)
+        {
+
+            <div class=" col-3" style="margin-bottom: 40px;  ">
+                <div class="card list-books " style="min-height: 456px; color: #000000; ">
                     <img src="~/@item.HinhAnhBia" class="card-img-top" alt="...">
                     <div class="card-body al">
                         <h5 class="card-title text-center">@item.TenSanPham</h5>

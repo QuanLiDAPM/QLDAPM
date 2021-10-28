@@ -130,8 +130,14 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\DatHangController.cs" />
+    <Compile Include="Controllers\DatHang_ChiTietController.cs" />
+    <Compile Include="Controllers\HangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KhachHangController.cs" />
+    <Compile Include="Controllers\LoaiController.cs" />
+    <Compile Include="Controllers\NoiSanXuatController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
+    <Compile Include="Controllers\TaiKhoanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -348,6 +354,36 @@
     <Content Include="Views\DatHang\Details.cshtml" />
     <Content Include="Views\DatHang\Edit.cshtml" />
     <Content Include="Views\DatHang\Index.cshtml" />
+    <Content Include="Views\DatHang_ChiTiet\Create.cshtml" />
+    <Content Include="Views\DatHang_ChiTiet\Delete.cshtml" />
+    <Content Include="Views\DatHang_ChiTiet\Details.cshtml" />
+    <Content Include="Views\DatHang_ChiTiet\Edit.cshtml" />
+    <Content Include="Views\DatHang_ChiTiet\Index.cshtml" />
+    <Content Include="Views\Hang\Create.cshtml" />
+    <Content Include="Views\Hang\Delete.cshtml" />
+    <Content Include="Views\Hang\Details.cshtml" />
+    <Content Include="Views\Hang\Edit.cshtml" />
+    <Content Include="Views\Hang\Index.cshtml" />
+    <Content Include="Views\KhachHang\Create.cshtml" />
+    <Content Include="Views\KhachHang\Delete.cshtml" />
+    <Content Include="Views\KhachHang\Details.cshtml" />
+    <Content Include="Views\KhachHang\Edit.cshtml" />
+    <Content Include="Views\KhachHang\Index.cshtml" />
+    <Content Include="Views\Loai\Create.cshtml" />
+    <Content Include="Views\Loai\Delete.cshtml" />
+    <Content Include="Views\Loai\Details.cshtml" />
+    <Content Include="Views\Loai\Edit.cshtml" />
+    <Content Include="Views\Loai\Index.cshtml" />
+    <Content Include="Views\NoiSanXuat\Create.cshtml" />
+    <Content Include="Views\NoiSanXuat\Delete.cshtml" />
+    <Content Include="Views\NoiSanXuat\Details.cshtml" />
+    <Content Include="Views\NoiSanXuat\Edit.cshtml" />
+    <Content Include="Views\NoiSanXuat\Index.cshtml" />
+    <Content Include="Views\TaiKhoan\Create.cshtml" />
+    <Content Include="Views\TaiKhoan\Delete.cshtml" />
+    <Content Include="Views\TaiKhoan\Details.cshtml" />
+    <Content Include="Views\TaiKhoan\Edit.cshtml" />
+    <Content Include="Views\TaiKhoan\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
