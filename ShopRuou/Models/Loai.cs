@@ -26,7 +26,11 @@ namespace ShopRuou.Models
         [Display(Name = "Loại")]
         [Required(ErrorMessage = "Loại không được bỏ trống!")]
         public string TenLoai { get; set; }
-    
+        [Display(Name = "Thao tác")]
+       
+        public string ThaoTac { get; set; }
+
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SanPham> SanPham { get; set; }
     }

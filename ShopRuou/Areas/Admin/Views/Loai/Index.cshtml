@@ -4,30 +4,33 @@
     ViewBag.Title = "Loại rượu";
 }
 
-<h2>Loại rượu</h2>
 
-<p>
-    @Html.ActionLink("Thêm mới", "Create")
-</p>
-<table class="table table-bordered">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TenLoai)
-        </th>
-        <th></th>
-    </tr>
+<div class="card mt-3">
+    <h5 class="card-header" style="background-color: #B44D63; color: #fff;">@ViewBag.Title</h5>
+    <div class="card-body">
+        <p><a class="btn btn-success style="background-color: #2cdb54" href="@Url.Action("Create")" role="button"><i class="fas fa-plus"></i> Thêm mới</a></p>
+        <table class="table table-bordered text-center">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenLoai)
+                </th>
+                <th> Thao tác</th>
+            </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenLoai)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenLoai)
+                    </td>
+                    <td>
+                   
+                        @Html.ActionLink("Sửa", "Edit", new { id = item.ID }) 
+                        @Html.ActionLink("Xóa", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
 
-</table>
+        </table>
+    </div>
+</div>

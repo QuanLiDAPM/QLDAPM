@@ -5,9 +5,9 @@
 }
 
 <div class="card mt-3">
-    <h5 class="card-header" style="background-color: #FFC1FF">@ViewBag.Title</h5>
+    <h5 class="card-header" style="background-color: #B44D63; color: #fff;">@ViewBag.Title</h5>
     <div class="card-body">
-        <p><a class="btn btn-primary" style="background-color: #B44D63" href="@Url.Action("Create")" role="button"><i class="fas fa-plus"></i> Thêm sản phẩm mới</a></p>
+        <p><a class="btn btn-success style="background-color: #2cdb54" href="@Url.Action("Create")" role="button"><i class="fas fa-plus"></i> Thêm sản phẩm mới</a></p>
         <table id="Pagination" class="table table-bordered    text-center " style="background-color: #FFF3F1">
             <thead>
                 <tr class="table " style=" background-color: #f384af">
@@ -15,25 +15,25 @@
                     <th>
                         @Html.DisplayNameFor(model => model.TenSanPham)
                     </th>
-                    <th>
+                    <th width="5%">
                         @Html.DisplayNameFor(model => model.NongDo)
                     </th>
                     <th>
                         @Html.DisplayNameFor(model => model.TheTich)
                     </th>
-                    <th>
+                    <th width="10%">
                         @Html.DisplayNameFor(model => model.NgayNhap)
                     </th>
-                    <th>
+                    <th width="4%">
                         @Html.DisplayNameFor(model => model.DonGia)
                     </th>
-                    <th>
+                    <th width="3%">
                         @Html.DisplayNameFor(model => model.SoLuong)
                     </th>
-                    <th>
+                    <th width="20%">
                         @Html.DisplayNameFor(model => model.MoTa)
                     </th>
-                    <th>
+                    <th width="5%">
                         @Html.DisplayNameFor(model => model.HinhAnhBia)
                     </th>
                     <th>
@@ -45,7 +45,7 @@
                     <th>
                         @Html.DisplayNameFor(model => model.NoiSanXuat.XuatXu)
                     </th>
-                    <th></th>
+                    <th> Thao tác</th>
                 </tr>
 
                 @foreach (var item in Model)
@@ -90,7 +90,6 @@
                         </td>
                         <td>
                             @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
                             @Html.ActionLink("Delete", "Delete", new { id = item.ID })
                         </td>
                     </tr>
