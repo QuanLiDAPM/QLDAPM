@@ -8,109 +8,109 @@ using System.Web;
 using System.Web.Mvc;
 using ShopRuou.Models;
 
-namespace ShopRuou.Controllers
+namespace ShopRuou.Areas.Admin.Controllers
 {
-    public class HangController : Controller
+    public class TaiKhoanController : Controller
     {
         private ShopRuouEntities db = new ShopRuouEntities();
 
-        // GET: Hang
+        // GET: TaiKhoan
         public ActionResult Index()
         {
-            return View(db.Hang.ToList());
+            return View(db.TaiKhoan.ToList());
         }
 
-        // GET: Hang/Details/5
+        // GET: TaiKhoan/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hang hang = db.Hang.Find(id);
-            if (hang == null)
+            TaiKhoan taiKhoan = db.TaiKhoan.Find(id);
+            if (taiKhoan == null)
             {
                 return HttpNotFound();
             }
-            return View(hang);
+            return View(taiKhoan);
         }
 
-        // GET: Hang/Create
+        // GET: TaiKhoan/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Hang/Create
+        // POST: TaiKhoan/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,TenHang")] Hang hang)
+        public ActionResult Create([Bind(Include = "ID,ChucVu,HoTen,TenDangNhap,MatKhau,SoDienThoai,DiaChi")] TaiKhoan taiKhoan)
         {
             if (ModelState.IsValid)
             {
-                db.Hang.Add(hang);
+                db.TaiKhoan.Add(taiKhoan);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(hang);
+            return View(taiKhoan);
         }
 
-        // GET: Hang/Edit/5
+        // GET: TaiKhoan/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hang hang = db.Hang.Find(id);
-            if (hang == null)
+            TaiKhoan taiKhoan = db.TaiKhoan.Find(id);
+            if (taiKhoan == null)
             {
                 return HttpNotFound();
             }
-            return View(hang);
+            return View(taiKhoan);
         }
 
-        // POST: Hang/Edit/5
+        // POST: TaiKhoan/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,TenHang")] Hang hang)
+        public ActionResult Edit([Bind(Include = "ID,ChucVu,HoTen,TenDangNhap,MatKhau,SoDienThoai,DiaChi")] TaiKhoan taiKhoan)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(hang).State = EntityState.Modified;
+                db.Entry(taiKhoan).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(hang);
+            return View(taiKhoan);
         }
 
-        // GET: Hang/Delete/5
+        // GET: TaiKhoan/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hang hang = db.Hang.Find(id);
-            if (hang == null)
+            TaiKhoan taiKhoan = db.TaiKhoan.Find(id);
+            if (taiKhoan == null)
             {
                 return HttpNotFound();
             }
-            return View(hang);
+            return View(taiKhoan);
         }
 
-        // POST: Hang/Delete/5
+        // POST: TaiKhoan/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Hang hang = db.Hang.Find(id);
-            db.Hang.Remove(hang);
+            TaiKhoan taiKhoan = db.TaiKhoan.Find(id);
+            db.TaiKhoan.Remove(taiKhoan);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

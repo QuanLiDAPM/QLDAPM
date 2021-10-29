@@ -129,18 +129,19 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
-    <Compile Include="Controllers\DatHangController.cs" />
-    <Compile Include="Controllers\DatHang_ChiTietController.cs" />
-    <Compile Include="Controllers\HangController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DatHangController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DatHang_ChiTietController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KhachHangController.cs" />
-    <Compile Include="Controllers\LoaiController.cs" />
-    <Compile Include="Controllers\NoiSanXuatController.cs" />
-    <Compile Include="Controllers\SanPhamController.cs" />
-    <Compile Include="Controllers\TaiKhoanController.cs" />
+    <Compile Include="Areas\Admin\Controllers\KhachHangController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoaiController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NoiSanXuatController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SanPhamController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TaiKhoanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Libs\SHA1.cs" />
     <Compile Include="Models\DatHang.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
@@ -153,9 +154,11 @@
     <Compile Include="Models\KhachHang.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\KhachHangModel.cs" />
     <Compile Include="Models\Loai.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\NhanVienModel.cs" />
     <Compile Include="Models\NoiSanXuat.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
@@ -238,6 +241,7 @@
     <Content Include="Areas\Admin\Views\Home\About.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Contact.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
@@ -331,14 +335,14 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\ChangePassword.cshtml" />
+    <Content Include="Views\Home\KhachHangSignUp.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\SanPham\Create.cshtml" />
-    <Content Include="Views\SanPham\Delete.cshtml" />
-    <Content Include="Views\SanPham\Details.cshtml" />
-    <Content Include="Views\SanPham\Edit.cshtml" />
-    <Content Include="Views\SanPham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper.js.flow" />
@@ -349,41 +353,42 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\DatHang\Create.cshtml" />
-    <Content Include="Views\DatHang\Delete.cshtml" />
-    <Content Include="Views\DatHang\Details.cshtml" />
-    <Content Include="Views\DatHang\Edit.cshtml" />
-    <Content Include="Views\DatHang\Index.cshtml" />
-    <Content Include="Views\DatHang_ChiTiet\Create.cshtml" />
-    <Content Include="Views\DatHang_ChiTiet\Delete.cshtml" />
-    <Content Include="Views\DatHang_ChiTiet\Details.cshtml" />
-    <Content Include="Views\DatHang_ChiTiet\Edit.cshtml" />
-    <Content Include="Views\DatHang_ChiTiet\Index.cshtml" />
-    <Content Include="Views\Hang\Create.cshtml" />
-    <Content Include="Views\Hang\Delete.cshtml" />
-    <Content Include="Views\Hang\Details.cshtml" />
-    <Content Include="Views\Hang\Edit.cshtml" />
-    <Content Include="Views\Hang\Index.cshtml" />
-    <Content Include="Views\KhachHang\Create.cshtml" />
-    <Content Include="Views\KhachHang\Delete.cshtml" />
-    <Content Include="Views\KhachHang\Details.cshtml" />
-    <Content Include="Views\KhachHang\Edit.cshtml" />
-    <Content Include="Views\KhachHang\Index.cshtml" />
-    <Content Include="Views\Loai\Create.cshtml" />
-    <Content Include="Views\Loai\Delete.cshtml" />
-    <Content Include="Views\Loai\Details.cshtml" />
-    <Content Include="Views\Loai\Edit.cshtml" />
-    <Content Include="Views\Loai\Index.cshtml" />
-    <Content Include="Views\NoiSanXuat\Create.cshtml" />
-    <Content Include="Views\NoiSanXuat\Delete.cshtml" />
-    <Content Include="Views\NoiSanXuat\Details.cshtml" />
-    <Content Include="Views\NoiSanXuat\Edit.cshtml" />
-    <Content Include="Views\NoiSanXuat\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang_ChiTiet\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang_ChiTiet\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang_ChiTiet\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang_ChiTiet\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\DatHang_ChiTiet\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Hang\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Hang\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Hang\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Hang\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Hang\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\KhachHang\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\KhachHang\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\KhachHang\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\KhachHang\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\KhachHang\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Loai\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Loai\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Loai\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Loai\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Loai\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NoiSanXuat\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\NoiSanXuat\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\NoiSanXuat\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\NoiSanXuat\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\NoiSanXuat\Index.cshtml" />
     <Content Include="Views\TaiKhoan\Create.cshtml" />
     <Content Include="Views\TaiKhoan\Delete.cshtml" />
     <Content Include="Views\TaiKhoan\Details.cshtml" />
     <Content Include="Views\TaiKhoan\Edit.cshtml" />
     <Content Include="Views\TaiKhoan\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

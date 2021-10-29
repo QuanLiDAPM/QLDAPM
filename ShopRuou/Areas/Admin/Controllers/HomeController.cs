@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ShopRuou.Library;
 
 namespace ShopRuou.Areas.Admin.Controllers
 {
@@ -29,5 +30,42 @@ namespace ShopRuou.Areas.Admin.Controllers
 
             return View();
         }
+        public ActionResult Login()
+        {
+            ModelState.AddModelError("LoginError", "");
+            return View();
+        }
+
+        // POST: Home/Login
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(NhanVienLogin nhanVien)
+        {
+            if (ModelState.IsValid)
+            {
+                string matKhauMaHoa = SHA1.ComputeHash(nhanVien.MatKhau);
+                var nhanvien = db.TaiKhoan.Where(r => r.TenDangNhap == nhanVien.TenDangNhap && r.MatKhau == matKhauMaHoa).SingleOrDefault();
+
+                if (nhanvien == null)
+                {
+                    ModelState.AddModelError("LoginError", "Tên đăng nhập hoặc mật khẩu không chính xác!");
+                    return View(nhanVien);
+                }
+                else
+                {
+                    // Đăng ký SESSION
+                    Session["ID"] = nhanvien.ID;
+                    Session["hoten"] = nhanvien.HoTen;
+                    Session["ChucVu"] = nhanvien.ChucVu;
+
+                    // Quay về trang chủ
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            return View(nhanVien);
+        }
+
+
     }
 }

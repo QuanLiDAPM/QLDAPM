@@ -10,7 +10,7 @@ using System.Web;
 using System.Web.Mvc;
 using ShopRuou.Models;
 
-namespace ShopRuou.Controllers
+namespace ShopRuou.Areas.Admin.Controllers
 {
     public class SanPhamController : Controller
     {

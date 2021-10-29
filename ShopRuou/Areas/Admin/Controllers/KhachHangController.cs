@@ -8,109 +8,109 @@ using System.Web;
 using System.Web.Mvc;
 using ShopRuou.Models;
 
-namespace ShopRuou.Controllers
+namespace ShopRuou.Areas.Admin.Controllers
 {
-    public class LoaiController : Controller
+    public class KhachHangController : Controller
     {
         private ShopRuouEntities db = new ShopRuouEntities();
 
-        // GET: Loai
+        // GET: KhachHang
         public ActionResult Index()
         {
-            return View(db.Loai.ToList());
+            return View(db.KhachHang.ToList());
         }
 
-        // GET: Loai/Details/5
+        // GET: KhachHang/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Loai loai = db.Loai.Find(id);
-            if (loai == null)
+            KhachHang khachHang = db.KhachHang.Find(id);
+            if (khachHang == null)
             {
                 return HttpNotFound();
             }
-            return View(loai);
+            return View(khachHang);
         }
 
-        // GET: Loai/Create
+        // GET: KhachHang/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Loai/Create
+        // POST: KhachHang/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,TenLoai")] Loai loai)
+        public ActionResult Create([Bind(Include = "ID,HoTen,SoDienThoai,DiaChi,TenDangNhap,MatKhau")] KhachHang khachHang)
         {
             if (ModelState.IsValid)
             {
-                db.Loai.Add(loai);
+                db.KhachHang.Add(khachHang);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(loai);
+            return View(khachHang);
         }
 
-        // GET: Loai/Edit/5
+        // GET: KhachHang/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Loai loai = db.Loai.Find(id);
-            if (loai == null)
+            KhachHang khachHang = db.KhachHang.Find(id);
+            if (khachHang == null)
             {
                 return HttpNotFound();
             }
-            return View(loai);
+            return View(khachHang);
         }
 
-        // POST: Loai/Edit/5
+        // POST: KhachHang/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,TenLoai")] Loai loai)
+        public ActionResult Edit([Bind(Include = "ID,HoTen,SoDienThoai,DiaChi,TenDangNhap,MatKhau")] KhachHang khachHang)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(loai).State = EntityState.Modified;
+                db.Entry(khachHang).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(loai);
+            return View(khachHang);
         }
 
-        // GET: Loai/Delete/5
+        // GET: KhachHang/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Loai loai = db.Loai.Find(id);
-            if (loai == null)
+            KhachHang khachHang = db.KhachHang.Find(id);
+            if (khachHang == null)
             {
                 return HttpNotFound();
             }
-            return View(loai);
+            return View(khachHang);
         }
 
-        // POST: Loai/Delete/5
+        // POST: KhachHang/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Loai loai = db.Loai.Find(id);
-            db.Loai.Remove(loai);
+            KhachHang khachHang = db.KhachHang.Find(id);
+            db.KhachHang.Remove(khachHang);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

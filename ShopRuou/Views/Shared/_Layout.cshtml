@@ -21,35 +21,46 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Mua nhiều nhất</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("MuaNhieuNhat", "Home")"><i class="fas fa-star"></i> Mua Nhiều</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Giỏ hàng</a>
+                        <a class="nav-link" href="@Url.Action("Index", "GioHang")"><i class="fas fa-cart-plus"></i> Giỏ hàng</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Quản lý
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="@Url.Action("Index", "Loai")">Loại rượu</a>
-                            <a class="dropdown-item" href="@Url.Action("Index", "NoiSanXuat")">Nơi sản xuất</a>
-                            <a class="dropdown-item" href="@Url.Action("Index", "TaiKhoan")">Tài khoản</a>
-                            <a class="dropdown-item" href="@Url.Action("Index", "KhachHang")">Khách hàng</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="@Url.Action("Index", "Hang")">Hãng</a>
-                            <a class="dropdown-item" href="@Url.Action("Index", "SanPham")">Sản phẩm</a>
-                            <a class="dropdown-item" href="@Url.Action("Index", "DatHang")">Đặt hàng</a>
-                            <a class="dropdown-item" href="@Url.Action("Index", "DatHang_ChiTiet")">Đặt hàng chi tiết</a>
-                        </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("KhachHangSignUp", "Home")"><i class="fas fa-cash-register"></i> Đăng ký</a>
                     </li>
+                    @if (Session["MaKhachHang"] == null)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Login", "Home")"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Session["HoTenKhachHang"].ToString()
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="@Url.Action("DonHangCuaToi", "Home")">Đơn hàng của tôi</a>
+                                <a class="dropdown-item" href="@Url.Action("ChangePassword", "Home")">Đổi mật khẩu</a>
+                                <a class="dropdown-item" href="@Url.Action("Logout", "Home")">Đăng xuất</a>
+                            </div>
+                        </li>
+                    }
+
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Bạn muốn tìm gì?" />
-                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                <form class="form-inline my-2 my-lg-0" action="@Url.Action("Search","Home")" method="post">
+                    <input class="form-control mr-sm-2" type="search" name="TuKhoa" placeholder="Bạn muốn tìm gì?" />
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"> Tìm kiếm <i class="fas fa-search"></i></button>
                 </form>
             </div>
         </nav>
+    </div>
+
+    </nav>
     </div>
     <div class="container-fluid mt-3">
         <div class="container-fluid body-content">
@@ -102,9 +113,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-footer row m-0">
+                <div class="card-footer row m-0" style="background-color: #721b23; ">
                     <div>
-                        <p> <strong class="follow-text">Theo dõi chúng tôi tại</strong> <label class="footer-right"> <i class="fab fa-instagram"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-twitter-square"></i> </label> </p>
+                        <p> <strong class="follow-text " style="color: #fff;">Theo dõi chúng tôi tại</strong> <label class="footer-right"> <i class="fab fa-instagram"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-twitter-square"></i> </label> </p>
                     </div>
                 </div>
             </div>

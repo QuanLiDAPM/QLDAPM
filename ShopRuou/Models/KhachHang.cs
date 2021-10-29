@@ -37,7 +37,9 @@ namespace ShopRuou.Models
         [Display(Name = "Mật khẩu")]
         [Required(ErrorMessage = "Mật khẩu không được bỏ trống!")]
         public string MatKhau { get; set; }
-    
+        [Display(Name = "Xác nhận mật khẩu")]
+        [Required(ErrorMessage = "Xác nhận mật khẩu không được bỏ trống!")]
+        public string XacNhanMatKhau { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DatHang> DatHang { get; set; }
     }
