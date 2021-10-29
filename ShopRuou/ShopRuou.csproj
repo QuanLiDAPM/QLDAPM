@@ -158,7 +158,6 @@
     <Compile Include="Models\Loai.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\NhanVienModel.cs" />
     <Compile Include="Models\NoiSanXuat.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
@@ -241,7 +240,6 @@
     <Content Include="Areas\Admin\Views\Home\About.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Contact.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
