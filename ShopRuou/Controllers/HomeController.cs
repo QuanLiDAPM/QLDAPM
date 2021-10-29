@@ -100,6 +100,28 @@ namespace ShopRuou.Controllers
 			}
 			return View(khachHang);
 		}
+		public ActionResult DonHangCuaToi()
+		{
+			int makh = Convert.ToInt32(Session["MaKhachHang"]);
+			var DonHangCuaToi = (from sp in db.SanPham
+								 join chitiet in db.DatHang_ChiTiet on sp.ID equals chitiet.SanPham_ID
+								 join dhang in db.DatHang on chitiet.DatHang_ID equals dhang.ID
+								 join kh in db.KhachHang on dhang.KhachHang_ID equals kh.ID
+								 where (kh.ID == makh)
+
+								 select new DonHangCuaToi()
+								 {
+									 TenSanPham = sp.TenSanPham,
+									 HinhAnhBia = sp.HinhAnhBia,
+									 DonGia = chitiet.DonGia,
+									 ID = kh.ID,
+									 SoLuong = chitiet.SoLuong,
+									 NgayDatHang = dhang.NgayDatHang
+
+								 }).OrderByDescending(dhang => dhang.NgayDatHang).ToList();
+
+			return View(DonHangCuaToi);
+		}
 		public ActionResult KhachHangSignUp()
 		{
 			ModelState.AddModelError("SignUpError", "");

@@ -132,6 +132,7 @@
     <Compile Include="Areas\Admin\Controllers\DatHangController.cs" />
     <Compile Include="Areas\Admin\Controllers\DatHang_ChiTietController.cs" />
     <Compile Include="Areas\Admin\Controllers\HangController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\KhachHangController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoaiController.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="Models\DatHang_ChiTiet.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GioHangModel.cs" />
     <Compile Include="Models\Hang.cs">
       <DependentUpon>ShopRuou.tt</DependentUpon>
     </Compile>
@@ -389,6 +391,8 @@
     <Content Include="Areas\Admin\Views\TaiKhoan\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\TaiKhoan\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\GioHang\Index.cshtml" />
+    <Content Include="Views\Home\DonHangCuaToi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
