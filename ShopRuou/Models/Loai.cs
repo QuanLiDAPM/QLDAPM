@@ -21,7 +21,6 @@ namespace ShopRuou.Models
             this.SanPham = new HashSet<SanPham>();
         }
         [Display(Name = "Mã loại")]
-        
         public int ID { get; set; }
         [Display(Name = "Loại")]
         [Required(ErrorMessage = "Loại không được bỏ trống!")]

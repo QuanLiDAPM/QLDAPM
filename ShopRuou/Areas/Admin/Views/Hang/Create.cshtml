@@ -1,23 +1,23 @@
 ﻿@model ShopRuou.Models.Hang
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Thêm hãng rượu";
 }
 
-<h2>Create</h2>
+
 
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
-        <h4>Hang</h4>
-        <hr />
+<div class="card mt-3">
+    <h5 class="card-header" style="background-color: #B44D63; color: #fff;">@ViewBag.Title</h5>
+    <div class="card-body " background-color: #fff3f14f">
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
+        <div class="form-group font-weight-bold" >
             @Html.LabelFor(model => model.TenHang, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-10" >
                 @Html.EditorFor(model => model.TenHang, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.TenHang, "", new { @class = "text-danger" })
             </div>
@@ -25,16 +25,15 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Thêm" class="btn btn-success" /> Hoặc @Html.ActionLink("Quay Về Danh Sách", "Index")
             </div>
         </div>
     </div>
-}
+    </div>
+    }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+    
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

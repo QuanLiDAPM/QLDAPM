@@ -1,529 +1,62 @@
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\ShopRuou.dll.config
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\ShopRuou.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\ShopRuou.pdb
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\csc.exe
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\csc.exe.config
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\csc.rsp
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\csi.exe
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\csi.exe.config
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\csi.rsp
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\Microsoft.Win32.Primitives.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.AppContext.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Console.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Globalization.Calendars.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.IO.Compression.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.IO.Compression.ZipFile.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.IO.FileSystem.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Net.Http.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Net.Sockets.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.ValueTuple.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Xml.XmlDocument.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Xml.XPath.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\vbc.exe
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\vbc.exe.config
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\vbc.rsp
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\VBCSCompiler.exe
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\Antlr3.Runtime.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\EntityFramework.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\EntityFramework.SqlServer.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\Newtonsoft.Json.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Helpers.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Mvc.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Optimization.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Razor.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.WebPages.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.WebPages.Razor.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\WebGrease.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\EntityFramework.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\EntityFramework.SqlServer.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Helpers.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Mvc.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Optimization.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.Razor.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.WebPages.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\System.Web.WebPages.Razor.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\Newtonsoft.Json.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\Antlr3.Runtime.pdb
-D:\Đồ án 1\ShopRuou\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Đồ án 1\ShopRuou\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
-D:\Đồ án 1\ShopRuou\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-D:\Đồ án 1\ShopRuou\ShopRuou\obj\Debug\ShopRuou.csproj.CopyComplete
-D:\Đồ án 1\ShopRuou\ShopRuou\obj\Debug\ShopRuou.dll
-D:\Đồ án 1\ShopRuou\ShopRuou\obj\Debug\ShopRuou.pdb
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\ShopRuou.dll.config
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\ShopRuou.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\ShopRuou.pdb
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\csc.exe
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\csc.exe.config
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\csc.rsp
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\csi.exe
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\csi.exe.config
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\csi.rsp
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\vbc.exe
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\vbc.exe.config
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\vbc.rsp
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\VBCSCompiler.exe
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Antlr3.Runtime.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\EntityFramework.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\EntityFramework.SqlServer.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Newtonsoft.Json.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Helpers.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Mvc.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Optimization.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Razor.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.Razor.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\WebGrease.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\EntityFramework.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\EntityFramework.SqlServer.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Helpers.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Mvc.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Optimization.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.Razor.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\System.Web.WebPages.Razor.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Newtonsoft.Json.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Antlr3.Runtime.pdb
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.pdb
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Buffers.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Memory.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\DOAN1\ShopRuou\ShopRuou (1)\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
-D:\DOAN1\Alcohol\ShopRuou\bin\ShopRuou.dll.config
-D:\DOAN1\Alcohol\ShopRuou\bin\ShopRuou.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\ShopRuou.pdb
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csc.exe
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csc.exe.config
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csc.rsp
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csi.exe
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csi.exe.config
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\csi.rsp
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Buffers.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Memory.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\vbc.exe
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\vbc.exe.config
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\vbc.rsp
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\VBCSCompiler.exe
-D:\DOAN1\Alcohol\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-D:\DOAN1\Alcohol\ShopRuou\bin\Antlr3.Runtime.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.SqlServer.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\Newtonsoft.Json.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Helpers.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Mvc.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Optimization.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Razor.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Razor.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\WebGrease.dll
-D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\EntityFramework.SqlServer.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\Newtonsoft.Json.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Helpers.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Mvc.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Optimization.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.Razor.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\System.Web.WebPages.Razor.xml
-D:\DOAN1\Alcohol\ShopRuou\bin\Antlr3.Runtime.pdb
-D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
-D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.dll
-D:\DOAN1\Alcohol\ShopRuou\obj\Debug\ShopRuou.pdb
-D:\QLDAPM\ShopRuou\bin\ShopRuou.dll.config
-D:\QLDAPM\ShopRuou\bin\ShopRuou.dll
-D:\QLDAPM\ShopRuou\bin\ShopRuou.pdb
-D:\QLDAPM\ShopRuou\bin\roslyn\csc.exe
-D:\QLDAPM\ShopRuou\bin\roslyn\csc.exe.config
-D:\QLDAPM\ShopRuou\bin\roslyn\csc.rsp
-D:\QLDAPM\ShopRuou\bin\roslyn\csi.exe
-D:\QLDAPM\ShopRuou\bin\roslyn\csi.exe.config
-D:\QLDAPM\ShopRuou\bin\roslyn\csi.rsp
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-D:\QLDAPM\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Buffers.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Memory.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\QLDAPM\ShopRuou\bin\roslyn\vbc.exe
-D:\QLDAPM\ShopRuou\bin\roslyn\vbc.exe.config
-D:\QLDAPM\ShopRuou\bin\roslyn\vbc.rsp
-D:\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe
-D:\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-D:\QLDAPM\ShopRuou\bin\Antlr3.Runtime.dll
-D:\QLDAPM\ShopRuou\bin\EntityFramework.dll
-D:\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.dll
-D:\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\QLDAPM\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-D:\QLDAPM\ShopRuou\bin\Newtonsoft.Json.dll
-D:\QLDAPM\ShopRuou\bin\System.Web.Helpers.dll
-D:\QLDAPM\ShopRuou\bin\System.Web.Mvc.dll
-D:\QLDAPM\ShopRuou\bin\System.Web.Optimization.dll
-D:\QLDAPM\ShopRuou\bin\System.Web.Razor.dll
-D:\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-D:\QLDAPM\ShopRuou\bin\System.Web.WebPages.dll
-D:\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.dll
-D:\QLDAPM\ShopRuou\bin\WebGrease.dll
-D:\QLDAPM\ShopRuou\bin\EntityFramework.xml
-D:\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.xml
-D:\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\QLDAPM\ShopRuou\bin\Newtonsoft.Json.xml
-D:\QLDAPM\ShopRuou\bin\System.Web.Helpers.xml
-D:\QLDAPM\ShopRuou\bin\System.Web.Mvc.xml
-D:\QLDAPM\ShopRuou\bin\System.Web.Optimization.xml
-D:\QLDAPM\ShopRuou\bin\System.Web.Razor.xml
-D:\QLDAPM\ShopRuou\bin\System.Web.WebPages.xml
-D:\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-D:\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.xml
-D:\QLDAPM\ShopRuou\bin\Antlr3.Runtime.pdb
-D:\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-D:\QLDAPM\ShopRuou\obj\Debug\ShopRuou.dll
-D:\QLDAPM\ShopRuou\obj\Debug\ShopRuou.pdb
-D:\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
-D:\NAM3\QLDAPM\ShopRuou\bin\ShopRuou.dll.config
-D:\NAM3\QLDAPM\ShopRuou\bin\ShopRuou.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\ShopRuou.pdb
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\csc.exe
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\csc.exe.config
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\csc.rsp
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\csi.exe
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\csi.exe.config
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\csi.rsp
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Buffers.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Memory.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\vbc.exe
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\vbc.exe.config
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\vbc.rsp
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe
-D:\NAM3\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-D:\NAM3\QLDAPM\ShopRuou\bin\Antlr3.Runtime.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\EntityFramework.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\Newtonsoft.Json.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Helpers.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Mvc.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Optimization.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Razor.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.WebPages.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\WebGrease.dll
-D:\NAM3\QLDAPM\ShopRuou\bin\EntityFramework.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\Newtonsoft.Json.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Helpers.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Mvc.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Optimization.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.Razor.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.WebPages.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.xml
-D:\NAM3\QLDAPM\ShopRuou\bin\Antlr3.Runtime.pdb
-D:\NAM3\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
-D:\NAM3\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-D:\NAM3\QLDAPM\ShopRuou\obj\Debug\ShopRuou.dll
-D:\NAM3\QLDAPM\ShopRuou\obj\Debug\ShopRuou.pdb
-<<<<<<< HEAD
-D:\QLDAPM-1\ShopRuou\bin\ShopRuou.dll.config
-D:\QLDAPM-1\ShopRuou\bin\ShopRuou.dll
-D:\QLDAPM-1\ShopRuou\bin\ShopRuou.pdb
-D:\QLDAPM-1\ShopRuou\bin\roslyn\csc.exe
-D:\QLDAPM-1\ShopRuou\bin\roslyn\csc.exe.config
-D:\QLDAPM-1\ShopRuou\bin\roslyn\csc.rsp
-D:\QLDAPM-1\ShopRuou\bin\roslyn\csi.exe
-D:\QLDAPM-1\ShopRuou\bin\roslyn\csi.exe.config
-D:\QLDAPM-1\ShopRuou\bin\roslyn\csi.rsp
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-D:\QLDAPM-1\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Buffers.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Memory.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\QLDAPM-1\ShopRuou\bin\roslyn\vbc.exe
-D:\QLDAPM-1\ShopRuou\bin\roslyn\vbc.exe.config
-D:\QLDAPM-1\ShopRuou\bin\roslyn\vbc.rsp
-D:\QLDAPM-1\ShopRuou\bin\roslyn\VBCSCompiler.exe
-D:\QLDAPM-1\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-D:\QLDAPM-1\ShopRuou\bin\Antlr3.Runtime.dll
-D:\QLDAPM-1\ShopRuou\bin\EntityFramework.dll
-D:\QLDAPM-1\ShopRuou\bin\EntityFramework.SqlServer.dll
-D:\QLDAPM-1\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\QLDAPM-1\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-D:\QLDAPM-1\ShopRuou\bin\Newtonsoft.Json.dll
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Helpers.dll
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Mvc.dll
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Optimization.dll
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Razor.dll
-D:\QLDAPM-1\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-D:\QLDAPM-1\ShopRuou\bin\System.Web.WebPages.dll
-D:\QLDAPM-1\ShopRuou\bin\System.Web.WebPages.Razor.dll
-D:\QLDAPM-1\ShopRuou\bin\WebGrease.dll
-D:\QLDAPM-1\ShopRuou\bin\EntityFramework.xml
-D:\QLDAPM-1\ShopRuou\bin\EntityFramework.SqlServer.xml
-D:\QLDAPM-1\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\QLDAPM-1\ShopRuou\bin\Newtonsoft.Json.xml
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Helpers.xml
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Mvc.xml
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Optimization.xml
-D:\QLDAPM-1\ShopRuou\bin\System.Web.Razor.xml
-D:\QLDAPM-1\ShopRuou\bin\System.Web.WebPages.xml
-D:\QLDAPM-1\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-D:\QLDAPM-1\ShopRuou\bin\System.Web.WebPages.Razor.xml
-D:\QLDAPM-1\ShopRuou\bin\Antlr3.Runtime.pdb
-D:\QLDAPM-1\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
-D:\QLDAPM-1\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-D:\QLDAPM-1\ShopRuou\obj\Debug\ShopRuou.dll
-D:\QLDAPM-1\ShopRuou\obj\Debug\ShopRuou.pdb
-=======
-E:\QLDA\QLDAPM\ShopRuou\bin\ShopRuou.dll.config
-E:\QLDA\QLDAPM\ShopRuou\bin\ShopRuou.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\ShopRuou.pdb
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\csc.exe
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\csc.exe.config
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\csc.rsp
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\csi.exe
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\csi.exe.config
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\csi.rsp
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Buffers.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Memory.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\vbc.exe
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\vbc.exe.config
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\vbc.rsp
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe
-E:\QLDA\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-E:\QLDA\QLDAPM\ShopRuou\bin\Antlr3.Runtime.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\EntityFramework.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\Newtonsoft.Json.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Helpers.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Mvc.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Optimization.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Razor.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.WebPages.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\WebGrease.dll
-E:\QLDA\QLDAPM\ShopRuou\bin\EntityFramework.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\Newtonsoft.Json.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Helpers.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Mvc.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Optimization.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.Razor.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.WebPages.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.xml
-E:\QLDA\QLDAPM\ShopRuou\bin\Antlr3.Runtime.pdb
-E:\QLDA\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csprojAssemblyReference.cache
-E:\QLDA\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-E:\QLDA\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csproj.CopyComplete
-E:\QLDA\QLDAPM\ShopRuou\obj\Debug\ShopRuou.dll
-E:\QLDA\QLDAPM\ShopRuou\obj\Debug\ShopRuou.pdb
->>>>>>> 0e044c47fcb3739a85f518cb41247cc2ef465cd9
-D:\1\ShopRuou\obj\Debug\ShopRuou.dll
-D:\1\ShopRuou\obj\Debug\ShopRuou.pdb
-D:\1\ShopRuou\bin\ShopRuou.dll.config
-D:\1\ShopRuou\bin\ShopRuou.dll
-D:\1\ShopRuou\bin\ShopRuou.pdb
-D:\1\ShopRuou\bin\roslyn\csc.exe
-D:\1\ShopRuou\bin\roslyn\csc.exe.config
-D:\1\ShopRuou\bin\roslyn\csc.rsp
-D:\1\ShopRuou\bin\roslyn\csi.exe
-D:\1\ShopRuou\bin\roslyn\csi.exe.config
-D:\1\ShopRuou\bin\roslyn\csi.rsp
-D:\1\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\1\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\1\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
-D:\1\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\1\ShopRuou\bin\roslyn\System.Buffers.dll
-D:\1\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
-D:\1\ShopRuou\bin\roslyn\System.Memory.dll
-D:\1\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
-D:\1\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
-D:\1\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\1\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\1\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\1\ShopRuou\bin\roslyn\vbc.exe
-D:\1\ShopRuou\bin\roslyn\vbc.exe.config
-D:\1\ShopRuou\bin\roslyn\vbc.rsp
-D:\1\ShopRuou\bin\roslyn\VBCSCompiler.exe
-D:\1\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
-D:\1\ShopRuou\bin\Antlr3.Runtime.dll
-D:\1\ShopRuou\bin\EntityFramework.dll
-D:\1\ShopRuou\bin\EntityFramework.SqlServer.dll
-D:\1\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\1\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
-D:\1\ShopRuou\bin\Newtonsoft.Json.dll
-D:\1\ShopRuou\bin\System.Web.Helpers.dll
-D:\1\ShopRuou\bin\System.Web.Mvc.dll
-D:\1\ShopRuou\bin\System.Web.Optimization.dll
-D:\1\ShopRuou\bin\System.Web.Razor.dll
-D:\1\ShopRuou\bin\System.Web.WebPages.Deployment.dll
-D:\1\ShopRuou\bin\System.Web.WebPages.dll
-D:\1\ShopRuou\bin\System.Web.WebPages.Razor.dll
-D:\1\ShopRuou\bin\WebGrease.dll
-D:\1\ShopRuou\bin\EntityFramework.xml
-D:\1\ShopRuou\bin\EntityFramework.SqlServer.xml
-D:\1\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\1\ShopRuou\bin\Newtonsoft.Json.xml
-D:\1\ShopRuou\bin\System.Web.Helpers.xml
-D:\1\ShopRuou\bin\System.Web.Mvc.xml
-D:\1\ShopRuou\bin\System.Web.Optimization.xml
-D:\1\ShopRuou\bin\System.Web.Razor.xml
-D:\1\ShopRuou\bin\System.Web.WebPages.xml
-D:\1\ShopRuou\bin\System.Web.WebPages.Deployment.xml
-D:\1\ShopRuou\bin\System.Web.WebPages.Razor.xml
-D:\1\ShopRuou\bin\Antlr3.Runtime.pdb
-D:\1\ShopRuou\obj\Debug\ShopRuou.csproj.AssemblyReference.cache
-D:\1\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
-D:\1\ShopRuou\obj\Debug\ShopRuou.csproj.CopyComplete
+D:\demo\QLDAPM\ShopRuou\bin\ShopRuou.dll.config
+D:\demo\QLDAPM\ShopRuou\bin\ShopRuou.dll
+D:\demo\QLDAPM\ShopRuou\bin\ShopRuou.pdb
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\csc.exe
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\csc.exe.config
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\csc.rsp
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\csi.exe
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\csi.exe.config
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\csi.rsp
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.Managed.Core.targets
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Buffers.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Collections.Immutable.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Memory.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Numerics.Vectors.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Reflection.Metadata.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\vbc.exe
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\vbc.exe.config
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\vbc.rsp
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe
+D:\demo\QLDAPM\ShopRuou\bin\roslyn\VBCSCompiler.exe.config
+D:\demo\QLDAPM\ShopRuou\bin\Antlr3.Runtime.dll
+D:\demo\QLDAPM\ShopRuou\bin\EntityFramework.dll
+D:\demo\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.dll
+D:\demo\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\demo\QLDAPM\ShopRuou\bin\Microsoft.Web.Infrastructure.dll
+D:\demo\QLDAPM\ShopRuou\bin\Newtonsoft.Json.dll
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Helpers.dll
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Mvc.dll
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Optimization.dll
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Razor.dll
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.dll
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.WebPages.dll
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.dll
+D:\demo\QLDAPM\ShopRuou\bin\WebGrease.dll
+D:\demo\QLDAPM\ShopRuou\bin\EntityFramework.xml
+D:\demo\QLDAPM\ShopRuou\bin\EntityFramework.SqlServer.xml
+D:\demo\QLDAPM\ShopRuou\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\demo\QLDAPM\ShopRuou\bin\Newtonsoft.Json.xml
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Helpers.xml
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Mvc.xml
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Optimization.xml
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.Razor.xml
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.WebPages.xml
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.WebPages.Deployment.xml
+D:\demo\QLDAPM\ShopRuou\bin\System.Web.WebPages.Razor.xml
+D:\demo\QLDAPM\ShopRuou\bin\Antlr3.Runtime.pdb
+D:\demo\QLDAPM\ShopRuou\obj\Debug\ShopRuou.csproj.CoreCompileInputs.cache
+D:\demo\QLDAPM\ShopRuou\obj\Debug\ShopRuou.dll
+D:\demo\QLDAPM\ShopRuou\obj\Debug\ShopRuou.pdb

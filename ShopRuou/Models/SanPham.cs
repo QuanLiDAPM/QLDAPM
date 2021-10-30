@@ -26,8 +26,14 @@ namespace ShopRuou.Models
         public Nullable<int> Loai_ID { get; set; }
         public Nullable<int> Hang_ID { get; set; }
         public Nullable<int> NoiSanXuat_ID { get; set; }
+        [Display(Name = "Tên sản phẩm")]
+        [Required(ErrorMessage = "Tên sản phẩm không được bỏ trống!")]
         public string TenSanPham { get; set; }
+        [Display(Name = "Thể tích")]
+        [Required(ErrorMessage = "Thể tích không được bỏ trống!")]
         public string TheTich { get; set; }
+        [Display(Name = "Nồng đồ")]
+        [Required(ErrorMessage = "Nồng độ không được bỏ trống!")]
         public string NongDo { get; set; }
 
         [Display(Name = "Ngày nhập")]
@@ -35,7 +41,11 @@ namespace ShopRuou.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> NgayNhap { get; set; }
+        [Display(Name = "Đơn giá")]
+        [Required(ErrorMessage = "Đơn giá không được bỏ trống!")]
         public Nullable<int> DonGia { get; set; }
+        [Display(Name = "Số lượng")]
+        [Required(ErrorMessage = "Số lượng không được bỏ trống!")]
         public Nullable<int> SoLuong { get; set; }
         [Display(Name = "Mô tả")]
         [DataType(DataType.MultilineText)]

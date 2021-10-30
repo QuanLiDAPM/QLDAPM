@@ -4,89 +4,91 @@
     ViewBag.Title = "Đặt hàng";
 }
 
-<h2>Đặt hàng</h2>
 
-<p>
-    @Html.ActionLink("Thêm đơn hàng mới", "Create")
-</p>
-<table class="table table-bordered">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.DienThoaiGiaoHang)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DiaChiGiaoHang)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NgayDatHang)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TinhTrang)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.KhachHang.HoTen)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TaiKhoan.HoTen)
-        </th>
-        <th></th>
-    </tr>
+<div class="card mt-3">
+    <h5 class="card-header" style="background-color: #B44D63; color: #fff;">@ViewBag.Title</h5>
+    <div class="card-body" style="background-color: #FFF">
+        <p><a class="btn btn-success style="background-color: #2cdb54" href="@Url.Action("Create")" role="button"><i class="fas fa-plus"></i> Thêm đơn hàng mới</a></p>
+        <table class="table table-bordered">
+            <tr style="background-color: #f1d3d6;">
+                <th>
+                    @Html.DisplayNameFor(model => model.DienThoaiGiaoHang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DiaChiGiaoHang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NgayDatHang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TinhTrang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.KhachHang.HoTen)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TaiKhoan.HoTen)
+                </th>
+                <th></th>
+            </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.DienThoaiGiaoHang)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DiaChiGiaoHang)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayDatHang)
-        </td>
-        <td>
-            @if (item.TinhTrang == 0)
+            @foreach (var item in Model)
             {
-        <span>Đơn hàng mới</span> }
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DienThoaiGiaoHang)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiaChiGiaoHang)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayDatHang)
+                    </td>
+                    <td>
+                        @if (item.TinhTrang == 0)
+                        {
+                            <span>Đơn hàng mới</span> }
                         else if (item.TinhTrang == 1)
                         {
-        <span>Đang xác nhận</span> }
+                            <span>Đang xác nhận</span> }
                         else if (item.TinhTrang == 2)
                         {
-        <span>Đã hủy</span> }
+                            <span>Đã hủy</span> }
                         else if (item.TinhTrang == 3)
                         {
-        <span>Đang đóng gói</span> }
+                            <span>Đang đóng gói</span> }
                         else if (item.TinhTrang == 4)
                         {
-        <span>Đang gởi vận chuyển</span> }
+                            <span>Đang gởi vận chuyển</span> }
                         else if (item.TinhTrang == 5)
                         {
-        <span>Đang chuyển</span> }
+                            <span>Đang chuyển</span> }
                         else if (item.TinhTrang == 6)
                         {
-        <span>Thất bại</span> }
+                            <span>Thất bại</span> }
                         else if (item.TinhTrang == 7)
                         {
-        <span>Đang chuyển hoàn</span> }
+                            <span>Đang chuyển hoàn</span> }
                         else if (item.TinhTrang == 8)
                         {
-        <span>Đã chuyển hoàn</span> }
+                            <span>Đã chuyển hoàn</span> }
                         else
                         {
-        <span>Thành công</span>}
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.KhachHang.HoTen)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TaiKhoan.HoTen)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+                            <span>Thành công</span>}
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KhachHang.HoTen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TaiKhoan.HoTen)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
 
-</table>
+        </table>
+        </div>

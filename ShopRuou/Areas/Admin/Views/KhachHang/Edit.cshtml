@@ -1,19 +1,19 @@
 ﻿@model ShopRuou.Models.KhachHang
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Sửa khách hàng";
 }
 
-<h2>Edit</h2>
+
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>KhachHang</h4>
-        <hr />
+}
+<div class="card mt-3">
+    <h5 class="card-header" style="background-color: #B44D63; color: #fff;">@ViewBag.Title</h5>
+    <div class="card-body " style="font-weight: bold; background-color: #fbf8f8 ">
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ID)
 
@@ -59,16 +59,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Lưu" class="btn btn-success" /> Hoặc @Html.ActionLink("Quay Về Danh Sách", "Index")
             </div>
         </div>
     </div>
-}
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

@@ -7,10 +7,10 @@
 
 <div class="card mt-3">
     <h5 class="card-header" style="background-color: #B44D63; color: #fff;">@ViewBag.Title</h5>
-    <div class="card-body">
+    <div class="card-body" style="background-color: #FFF3F1">
         <p><a class="btn btn-success style="background-color: #2cdb54" href="@Url.Action("Create")" role="button"><i class="fas fa-plus"></i> Thêm mới</a></p>
-        <table class="table table-bordered text-center">
-            <tr>
+        <table class="table table-bordered text-center" >
+            <tr style=" background-color: #f1d3d6">
                 <th>
                     @Html.DisplayNameFor(model => model.TenLoai)
                 </th>
