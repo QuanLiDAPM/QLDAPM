@@ -6,9 +6,9 @@
 
 <div class="card mt-3">
     <h5 class="card-header" style="background-color: #B44D63; color: #fff;">@ViewBag.Title</h5>
-    <div class="card-body"style="background-color: #FFF3F1"  >
-        <p><a class="btn btn-success style="background-color: #2cdb54" href="@Url.Action("Create")" role="button"><i class="fas fa-plus"></i> Thêm sản phẩm mới</a></p>
-        <table id="Pagination" class="table table-bordered    text-center " style="background-color: #FFf" >
+    <div class="card-body" style="background-color: #FFF3F1">
+        <p><a class="btn btn-success" style="background-color: #2cdb54" href="@Url.Action("Create")" role="button"><i class="fas fa-plus"></i> Thêm sản phẩm mới</a></p>
+        <table id="Pagination" class="table table-bordered    text-center " style="background-color: #FFf">
             <thead>
                 <tr class="table " style=" background-color: #f1d3d6">
                     <th>ID</th>
@@ -47,7 +47,9 @@
                     </th>
                     <th> Thao tác</th>
                 </tr>
-
+            </thead>
+            <tbody>
+                @{ int stt = 1;}
                 @foreach (var item in Model)
                 {
                     <tr>
@@ -89,11 +91,35 @@
                             @Html.DisplayFor(modelItem => item.NoiSanXuat.XuatXu)
                         </td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                            <a href=" @Url.Action("Edit", new { id = item.ID })"><i class="fas fa-edit"></i></a> |
+                            <a href=" @Url.Action("Delete", new { id = item.ID })"><i class="fas fa-trash-alt text-danger"></i></a>
                         </td>
                     </tr>
                 }
+            </tbody>
         </table>
     </div>
 </div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#Pagination').DataTable({
+                "language": {
+                    "lengthMenu": "Hiển thị _MENU_ Sản phẩm",
+                    "zeroRecords": "Không có sản phẩm nào",
+                    "info": "Từ trang _PAGE_ đến _PAGES_",
+                    "infoEmpty": "No records available",
+                    "infoFiltered": "(filtered from _MAX_ total records)",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Trước",
+                        "previous": "Sau"
+                    },
+                    "search": "Tìm Kiếm:",
+                }
+            });
+        });
+    </script>
+
+}
