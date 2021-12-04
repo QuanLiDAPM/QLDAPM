@@ -19,6 +19,8 @@ namespace LinquorStore.Models
         [Key]
         [Column("ID")]
         public int Id { get; set; }
+
+        [Display(Name = "Tên Loại")]
         [Required]
         [StringLength(255)]
         public string TenLoai { get; set; }
