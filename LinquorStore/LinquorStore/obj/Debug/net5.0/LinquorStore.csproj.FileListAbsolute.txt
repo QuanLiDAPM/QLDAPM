@@ -405,7 +405,6 @@ G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\bin\Debug\net5.0\runtimes\win-arm\lib
 G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\obj\Debug\net5.0\LinquorStore.csproj.AssemblyReference.cache
 G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\obj\Debug\net5.0\LinquorStore.GeneratedMSBuildEditorConfig.editorconfig
 G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\obj\Debug\net5.0\LinquorStore.AssemblyInfoInputs.cache
 G:\QLDAPM\QLDAPM\LinquorStore\LinquorStore\obj\Debug\net5.0\LinquorStore.AssemblyInfo.cs
