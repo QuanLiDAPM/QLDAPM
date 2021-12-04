@@ -18,7 +18,11 @@ namespace LinquorStore.Models
         public int? DatHangId { get; set; }
         [Column("SanPham_ID")]
         public int? SanPhamId { get; set; }
+
+        [Display(Name = "Số lượng")]
         public short? SoLuong { get; set; }
+
+        [Display(Name = "Đơn giá")]
         public int? DonGia { get; set; }
 
         [ForeignKey(nameof(DatHangId))]
