@@ -2,7 +2,46 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<main role="main" class="pb-3 baby-sp" style="background-color: #fff;">
+
+    <div class="container">
+        <div class="card-group product">
+            <div class="card mt-3" style="padding: 0px; border:none;">
+                <div class="card-body bg-white ">
+                    <div class="card-deck ">
+                        @foreach (var item in Model)
+                        {
+                            <div class=" col-xl-3 col-lg-3 col-md-4 col-sm-6" style="margin-bottom: 40px;">
+                                <div class=" card list-book rounded">
+                                    <div class="hover-opacity">
+                                        <div class="cart-op">
+                                            <a asp-route-id="@item.Id">
+                                                <img src="~/@item.HinhAnhBia" width="20" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-footer cart-bo text-center button-buy ">
+                                            <a class="btn btn-productcart " asp-action="AddToCart" asp-route-id="@item.Id">
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </a>
+                                            <a class="btn btn-productcart " asp-action="Details" asp-route-id="@item.Id">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body al">
+                                        <h5 class="card-title text-center">@item.TenSanPham</h5>
+                                        <p class="card-text text-center text-danger">@String.Format("{0:N0}", item.DonGia) .vnđ</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
