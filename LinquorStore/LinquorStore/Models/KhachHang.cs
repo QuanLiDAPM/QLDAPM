@@ -19,23 +19,38 @@ namespace LinquorStore.Models
         [Key]
         [Column("ID")]
         public int Id { get; set; }
+
+        [Display(Name = "Họ tên")]
         [Required]
         [StringLength(255)]
         public string HoTen { get; set; }
+
+        [Display(Name = "Ngày sinh")]
         [Column(TypeName = "date")]
         public DateTime NgaySinh { get; set; }
+
+        [Display(Name = "Số điện thoại")]
         [Required]
         [StringLength(255)]
         public string SoDienThoai { get; set; }
+
+        [Display(Name = "Địa chỉ")]
         [Required]
         [StringLength(255)]
         public string DiaChi { get; set; }
+
+        [Display(Name = "Tên đăng nhập")]
         [Required]
         [StringLength(255)]
         public string TenDangNhap { get; set; }
+
+        [Display(Name = "Mật khẩu")]
         [Required]
         [StringLength(255)]
         public string MatKhau { get; set; }
+
+        [Display(Name = "Gmail")]
+        [Required]
         [StringLength(255)]
         public string Mail { get; set; }
 
