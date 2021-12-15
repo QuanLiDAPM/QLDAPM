@@ -1,0 +1,53 @@
+﻿@model LinquorStore.Models.TaiKhoan
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Sửa Tài khoản Admin</h4>
+        <form asp-action="Edit" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ChucVu" class="control-label"></label>
+                <input asp-for="ChucVu" class="form-control" pattern="\d*" max="1" min="0"/>
+                <span asp-validation-for="ChucVu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HoTen" class="control-label"></label>
+                <input asp-for="HoTen" class="form-control" />
+                <span asp-validation-for="HoTen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenDangNhap" class="control-label"></label>
+                <input asp-for="TenDangNhap" class="form-control" />
+                <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatKhau" class="control-label"></label>
+                <input asp-for="MatKhau" class="form-control" />
+                <span asp-validation-for="MatKhau" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoDienThoai" class="control-label"></label>
+                <input asp-for="SoDienThoai" class="form-control" />
+                <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-app" /> |
+                <a asp-action="Index">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@

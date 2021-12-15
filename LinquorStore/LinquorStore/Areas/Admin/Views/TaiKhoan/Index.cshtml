@@ -1,0 +1,64 @@
+﻿@model IEnumerable<LinquorStore.Models.TaiKhoan>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@using Microsoft.AspNetCore.Http
+<p>
+    <a class="btn btn-create" asp-action="Create">Thêm Tài Khoản</a>
+</p>
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ChucVu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenDangNhap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MatKhau)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoDienThoai)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChucVu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoTen)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenDangNhap)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MatKhau)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoDienThoai)
+                </td>
+                <td class="text-right">
+                    <a class="btn btn-edit" href=" @Url.Action("Edit", new { id = item.Id })">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                    &ensp;
+                    <a class="btn btn-del" asp-action="Delete" asp-route-id="@item.Id">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
