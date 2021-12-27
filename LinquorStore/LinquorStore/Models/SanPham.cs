@@ -18,7 +18,7 @@ namespace LinquorStore.Models
 
         [Key]
         [Column("ID")]
-        public int Id { get; set; }
+        public int Id { get; set; }       
         [Column("Loai_ID")]
         public int? LoaiId { get; set; }
         [Column("Hang_ID")]
@@ -46,7 +46,7 @@ namespace LinquorStore.Models
         public int DonGia { get; set; }
 
         [Display(Name = "Số Lượng")]
-        public int? SoLuong { get; set; }
+        public int SoLuong { get; set; }
 
         [Display(Name = "Mô Tả")]
         [StringLength(255)]
@@ -56,7 +56,7 @@ namespace LinquorStore.Models
         [StringLength(255)]
         public string HinhAnhBia { get; set; }
 
-        [Display(Name = "Hàng")]
+        [Display(Name = "Hãng")]
         [ForeignKey(nameof(HangId))]
         [InverseProperty("SanPhams")]
         public virtual Hang Hang { get; set; }
@@ -73,4 +73,8 @@ namespace LinquorStore.Models
         [InverseProperty(nameof(DatHangChiTiet.SanPham))]
         public virtual ICollection<DatHangChiTiet> DatHangChiTiets { get; set; }
     }
+
+
+
+
 }

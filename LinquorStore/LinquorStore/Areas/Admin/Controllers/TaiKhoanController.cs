@@ -10,6 +10,7 @@ using LinquorStore.Models;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using LinquorStore.Library;
+using AspNetCoreHero.ToastNotification.Abstractions;
 
 namespace LinquorStore.Controllers
 {
@@ -17,10 +18,11 @@ namespace LinquorStore.Controllers
     public class TaiKhoanController : Controller
     {
         private readonly LiquorStoresContext _context;
-
-        public TaiKhoanController(LiquorStoresContext context)
+        public INotyfService _notifyService { get; }
+        public TaiKhoanController(LiquorStoresContext context, INotyfService notifyService)
         {
             _context = context;
+            _notifyService = notifyService;
         }
 
         // GET: TaiKhoan
@@ -66,6 +68,7 @@ namespace LinquorStore.Controllers
                 taiKhoan.MatKhau = SHA1.ComputeHash(taiKhoan.MatKhau);
                 _context.Add(taiKhoan);
                 await _context.SaveChangesAsync();
+                _notifyService.Success("Thêm tài khoản thành công");
                 return RedirectToAction(nameof(Index));
             }
             return View(taiKhoan);
@@ -105,11 +108,13 @@ namespace LinquorStore.Controllers
                 {
                     _context.Update(taiKhoan);
                     await _context.SaveChangesAsync();
+                    _notifyService.Success("Cập nhật thông tin thành công");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!TaiKhoanExists(taiKhoan.Id))
                     {
+                        _notifyService.Error("Có lỗi xảy ra");
                         return NotFound();
                     }
                     else
@@ -148,6 +153,7 @@ namespace LinquorStore.Controllers
             var taiKhoan = await _context.TaiKhoans.FindAsync(id);
             _context.TaiKhoans.Remove(taiKhoan);
             await _context.SaveChangesAsync();
+            _notifyService.Success("Xoá tài khoản thành công");
             return RedirectToAction(nameof(Index));
         }
 

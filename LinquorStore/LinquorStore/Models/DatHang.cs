@@ -39,7 +39,15 @@ namespace LinquorStore.Models
         [Display(Name = "Tình trạng")]
         public short? TinhTrang { get; set; }
 
+        [Display(Name = "Ngày Xác Nhận")]
+        [Column(TypeName = "datetime")]
+        public DateTime? NgayXacNhan { get; set; }
 
+        [Display(Name = "Dự kiến ngày nhận")]
+        [Column(TypeName = "datetime")]
+        public DateTime? DuKienNgayNhan { get; set; }
+
+        [Display(Name = "Tên khách hàng")]
         [ForeignKey(nameof(KhachHangId))]
         [InverseProperty("DatHangs")]
         public virtual KhachHang KhachHang { get; set; }
@@ -49,7 +57,7 @@ namespace LinquorStore.Models
         [InverseProperty("DatHangs")]
         public virtual TaiKhoan TaiKhoan { get; set; }
 
-
+        
         [InverseProperty(nameof(DatHangChiTiet.DatHang))]
         public virtual ICollection<DatHangChiTiet> DatHangChiTiets { get; set; }
     }

@@ -1,0 +1,127 @@
+﻿@model PaginatedList<LinquorStore.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layoutmain.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+
+<main role="main" class="pb-3 baby-sp" style="background-color: #fff;">
+
+    <ul class="nav justify-content-center navsp " style="height: 145px;">
+
+        <li class="nav-item " style="margin-bottom: auto; margin-top: auto;">
+            <span>
+                Kết quả tìm kiếm
+
+            </span>
+            <span style=" display: flex; font-size: 20px;  justify-content: center;">
+                Đã tìm thấy
+                @ViewBag.thongbao kết quả
+            </span>
+            @*<span style=" display: flex; font-size: 20px;  justify-content: center;">
+                   Trang
+                    @ViewBag.pageNumber
+                </span>*@
+
+        </li>
+
+    </ul>
+
+    <div class="container">
+        <div class="card-group product">
+            <div class="card mt-3" style="padding: 0px; border:none;">
+
+                <div class="card-body bg-white ">
+
+
+                    <div class="card-deck ">
+                        @foreach (var item in Model)
+                        {
+                            <div class=" col-xl-3 col-lg-3 col-md-4 col-sm-6" style="margin-bottom: 40px;">
+                                <div class=" card list-book rounded">
+                                    <div class="hover-opacity">
+                                        <div class="cart-op">
+                                            <a asp-route-id="@item.Id">
+                                                <img src="~/@item.HinhAnhBia" width="20" class="card-img-top" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="card-footer cart-bo text-center button-buy ">
+                                            <a class="btn btn-productcart " asp-action="AddToCart" asp-route-id="@item.Id">
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </a>
+                                            <a class="btn btn-productcart " asp-action="Details" asp-route-id="@item.Id">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body al">
+                                        <h5 class="card-title text-center">@item.TenSanPham</h5>
+                                        <p class="card-text text-center text-danger">@String.Format("{0:N0}", item.DonGia) VNĐ</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        }
+
+                    </div>
+                    @{
+                        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+                    }
+                    <div class="row">
+                        <div class="col-md-6 " style="text-align:end">
+                            <a asp-action="Search" asp-controller="Search"
+                               asp-route-pageNumber="@(Model.PageIndex - 1)"
+                               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                               class="btn css-18 @prevDisabled">
+                                Trước
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a asp-action="Search" asp-controller="Search"
+                               asp-route-pageNumber="@(Model.PageIndex + 1)"
+                               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                               class="btn css-18 @nextDisabled">
+                                Sau
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                </div>
+                <div>
+
+
+                </div>
+
+            </div>
+            
+
+        </div>
+</main>
+
+
+
+
+<style>
+    .css-18 {
+        height: 36px;
+        width: 80px;
+        background: #9b3017 !important;
+        color: #fff;
+    }
+
+    .btn :hover {
+        background-color: #9b3017 !important;
+        color: #fff;
+    }
+</style>

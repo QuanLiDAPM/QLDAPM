@@ -57,6 +57,27 @@ body {
     background-color: #0d6efd;
 
 }
+.btn-det {
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 5px;
+    margin: 0 0 0px -8px;
+    min-width: 55px;
+    text-align: center;
+    color: #fddf0d;
+    border: 1px solid #fddf0d !important;
+    background-color: #fff0;
+    font-size: 18px;
+    transition: .9s;
+}
+
+}
+
+.btn-det:hover {
+    color: #fff;
+    border: 1px solid #0d6efd !important;
+    background-color: #0d6efd;
+}
 .btn-del {
     border-radius: 5px;
     position: relative;

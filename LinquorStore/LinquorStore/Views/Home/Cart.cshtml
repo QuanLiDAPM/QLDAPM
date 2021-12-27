@@ -1,0 +1,204 @@
+﻿@model List<LinquorStore.Models.CartItem>
+
+@{
+    Layout = "~/Views/Shared/_Layoutmain.cshtml";
+
+}
+<br />
+<br />
+<br />
+<br />
+
+<h3 class="mt-2">Giỏ hàng của bạn</h3>
+
+@*@if (Model.Count > 0)
+    {
+        decimal total = 0;//Tổng tiền
+        int? num = 1;
+
+        <div class="card-group product">
+            <div class="card mt-3" style="padding: 0px;">
+                <table class="table " style="background-color:#fff;">
+                    <tr>
+                        <th>STT</th>
+                        <th>Sản phẩm</th>
+                        <th>Hình ảnh</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+                    </tr>
+                    @foreach (var cartitem in Model)
+                    {
+                        var amount = cartitem.Quantity * cartitem.Product.DonGia;//thành tiền
+                        total += amount;
+                        <tr>
+                            <td>@(num++)</td>
+                            <td>
+
+                                @cartitem.Product.TenSanPham
+                            </td>
+                            <td>
+                                <img src="~/@cartitem.Product.HinhAnhBia" class="img-thumbnail" style="border: none; max-width: 45px; max-height: 150px;" />
+                            </td>
+                            <td>@cartitem.Product.DonGia</td>
+                            <td>
+                                <form asp-action="UpdateItem" method="post">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="hidden" asp-for="@cartitem.Product.Id " name="id" />
+                                            <input asp-for="@cartitem.Quantity" name="quantity" class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            <input type="submit" value="Cập nhật" class="btn btn-warning" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td>(@amount.ToString("n0"))</td>
+                            <td>
+                                <a asp-action="RemoveItem" asp-route-id="@cartitem.Product.Id"><i class="fa fa-trash text-danger"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-right"><strong>Tổng tiền: </strong></td>
+                            <td><strong class="text-danger">@(total.ToString("n0"))</strong></td>
+                            <td>
+                                <a asp-controller="Product" asp-action="Checkout" class="btn btn-success">Đặt mua</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+
+            </div>
+        </div>
+    }
+    else
+    {
+        <p class="alert alert-danger far fa-sad-tear"> Giỏ hàng trống </p>
+    }*@
+
+
+
+@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_IdKhachHang") == null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Lỗi!</strong> Bạn chưa Đăng Nhập!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="p-3">
+        <a asp-action="login" style="display:inline; " class="btn btn-primary px-4">Đăng nhập</a>
+        <a class="btn btn-outline-dark px-4" asp-action="Index">Quay lại trang chủ</a>
+    </div>
+    
+}
+else
+{
+    @if (Model.Count > 0)
+    {
+        decimal total = 0;//Tổng tiền
+        int? num = 1;
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row">
+                    <div class="table-wrap">
+                        <table class="table">
+                            <thead class="thead-primary">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Hình ảnh</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                    <th></th>
+                                </tr>
+
+                            </thead>
+
+                            @foreach (var cartitem in Model)
+                            {
+                                var amount = cartitem.Quantity * cartitem.Product.DonGia;//thành tiền
+                                total += amount;
+
+                                <tbody>
+                                    <tr class="alert" role="alert">
+                                        <td>@(num++)</td>
+                                        <td>
+                                            @cartitem.Product.TenSanPham
+                                        </td>
+                                        <td>
+                                            <img src="~/@cartitem.Product.HinhAnhBia" class="img-thumbnail" style="border: none; max-width: 60px; max-height: 150px;" />
+                                        </td>
+                                        <td>@cartitem.Product.DonGia.ToString("n0")</td>
+                                        <td>
+                                            <form asp-action="UpdateItem" method="post">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input type="hidden" asp-for="@cartitem.Product.Id " name="id" />
+                                                        <input asp-for="@cartitem.Quantity" name="quantity" class="form-control" />
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="submit" value="Cập nhật" class="btn btn-primary mt-1" />
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td>(@amount.ToString("n0"))</td>
+                                        <td>
+                                            <a asp-action="RemoveItem" asp-route-id="@cartitem.Product.Id"><i class="fa fa-trash text-danger"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            }
+                        </table>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate fadeInUp ftco-animated">
+
+                        <div class="cart-total mb-3">
+                            <h3>Bảng thanh toán</h3>
+                            @foreach (var cartitem in Model)
+                            {
+                                //thành tiền
+                                total += total - total;
+                                <p class="d-flex">
+                                    <span>@cartitem.Product.TenSanPham</span>
+                                    <span class="col-4">@cartitem.Product.DonGia.ToString("n0")</span>
+                                    <span class="col-2">x @cartitem.Quantity</span>
+                                </p>
+                                <hr>
+                            }
+                            <p class="d-flex total-price">
+                                <span>Tổng tiền</span>
+                                <span class="col-1"></span>
+                                <span>@(total.ToString("n0")) vnđ</span>
+
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-center">
+
+                                <a asp-action="CheckOut_Details" style="display:inline; " class="btn btn-primary mr-4">Thanh toán</a>
+                                <a href="Index" style="display:inline;" class="btn btn-primary">Mua Thêm</a>
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    }
+    else
+    {
+        <p class="alert alert-danger far fa-sad-tear text-xl-center "> Giỏ hàng trống! </p>
+    }
+
+}

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layoutmain.cshtml";
+
+}
+<br />
+<br />
+<br />
+<br />
+@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_IdKhachHang") == null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Thất Bại!</strong> Bạn Chưa Đăng Nhập!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+else
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Thành công!</strong> Đơn hàng đã đặt thành công. Vui lòng theo dõi ngày nhận hàng!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<div class="p-3">
+    <a class="btn btn-outline-dark px-4" asp-action="Index">Quay lại trang chủ</a>
+</div>

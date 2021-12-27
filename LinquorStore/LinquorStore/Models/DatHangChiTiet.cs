@@ -14,16 +14,21 @@ namespace LinquorStore.Models
         [Key]
         [Column("ID")]
         public int Id { get; set; }
+
+        [Display(Name = "Đơn đặt hàng")]
         [Column("DatHang_ID")]
         public int? DatHangId { get; set; }
+
+        [Display(Name = "Sản phẩm")]
         [Column("SanPham_ID")]
         public int? SanPhamId { get; set; }
 
         [Display(Name = "Số lượng")]
-        public short? SoLuong { get; set; }
+        public short SoLuong { get; set; }
 
         [Display(Name = "Đơn giá")]
-        public int? DonGia { get; set; }
+        [DisplayFormat(DataFormatString = "{0:N0}", ApplyFormatInEditMode = true)]
+        public int DonGia { get; set; }
 
         [ForeignKey(nameof(DatHangId))]
         [InverseProperty("DatHangChiTiets")]

@@ -6522,6 +6522,9 @@ button.close {
 .pull-left {
   float: left !important;
 }
+.pull-center {
+    margin-left: 33% !important;
+}
 .hide {
   display: none !important;
 }

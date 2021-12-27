@@ -1,4 +1,5 @@
-﻿@model LinquorStore.Models.SanPham
+﻿<!DOCTYPE html>
+@model LinquorStore.Models.SanPham
 
 @{
     ViewData["Title"] = "Details";
@@ -60,8 +61,10 @@
 <section class="ftco-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 mb-5 ftco-animate fadeInUp ftco-animated">
-                <a class="image-popup prod-img-bg"><img src="~/@Html.DisplayFor(model => model.HinhAnhBia)" class="img-fluid" alt="Colorlib Template"></a>
+            <div class="col-lg-4 mb-5 ftco-animate fadeInUp ftco-animated ">
+                <a href="~/@Html.DisplayFor(model => model.HinhAnhBia)" class="image-popup prod-img-bg">
+                    <img src="~/@Html.DisplayFor(model => model.HinhAnhBia)" class="img-fluid" alt="Colorlib Template">
+                </a>
             </div>
             <div class="col-lg-6 product-details pl-md-5 ftco-animate fadeInUp ftco-animated">
                 Sản phẩm:
@@ -90,31 +93,32 @@
                     <div class="name">Mô tả: <h5> @Html.DisplayFor(model => model.MoTa)</h5></div>
                     <br />
                 </div>
-                @*<div class="row mt-4 mb-4">
-                        <div class="input-group col-md-6 d-flex mb-3">
-                            <span class="input-group-btn mr-2">
-                                <button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </span>
-                            <input type="hidden" asp-for="@Model" name="id" />
-                            <input type="text" asp-for="@Model.SoLuong" name="quantity" class="quantity form-control input-number">
-                            <span class="input-group-btn ml-2">
-                                <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </span>
-                        </div>
-                        <div class="w-100"></div>
 
-                    </div>*@
-
-
-                <div class="p-3">
-                    <a asp-controller="Home" asp-action="AddToCart" asp-route-id="@Model.Id" class="btn btn-primary px-5 mr-2">Thêm vào giỏ</a>
-                    <a class="btn btn-outline-dark px-4" asp-action="Index">Quay lại trang chủ</a>
+                    @*<div class="row mt-4 mb-4">
+                <div class="input-group col-md-6 d-flex mb-3">
+                    <span class="input-group-btn mr-2">
+                        <button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="hidden" asp-for="@Model" name="id" />
+                    <input type="text" asp-for="@Model.SoLuong" name="quantity" class="quantity form-control input-number">
+                    <span class="input-group-btn ml-2">
+                        <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </span>
                 </div>
-            </div>
+                <div class="w-100"></div>
+
+            </div>*@
+
+
+                    <div class="p-3">
+                        <a asp-controller="Home" asp-action="AddToCart" asp-route-id="@Model.Id" class="btn btn-primary px-5 mr-2">Thêm vào giỏ</a>
+                        <a class="btn btn-outline-dark px-4" asp-action="Index">Quay lại trang chủ</a>
+                    </div>
+                </div>
 
         </div>
 
@@ -282,7 +286,6 @@
         </div>
     </div>
 </section>
-
 
 
 

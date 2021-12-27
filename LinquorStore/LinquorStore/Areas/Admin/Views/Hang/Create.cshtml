@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Hãng
+            <small>Thêm Hãng</small>
+        </h1>
+
+    }
+    @model LinquorStore.Models.Hang
+
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Thêm hãng</h4>
+            <form asp-action="Create" enctype="multipart/form-data" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="TenHang" class="control-label"></label>
+                    <input asp-for="TenHang" class="form-control" />
+                    <span asp-validation-for="TenHang" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Thêm" class="btn btn-primary" /> |
+                    <a asp-action="Index">Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @*<div>
+            <a asp-action="Index">Back to List</a>
+        </div>*@
+
+    @*@section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }*@
+}

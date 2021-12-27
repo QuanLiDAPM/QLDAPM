@@ -1,4 +1,5 @@
-﻿@using Microsoft.AspNetCore.Http
+﻿
+@using Microsoft.AspNetCore.Http
 @if (@Context.Session.GetString("_Id") == null)
 {
     <div style=" display: flex; align-content: space-between; justify-content: center;">
@@ -34,14 +35,18 @@ else
                 <th>
                     @Html.DisplayNameFor(model => model.TheTich)
                 </th>
-               
+                @*<th>
+                        @Html.DisplayNameFor(model => model.NgayNhap)
+                    </th>*@
                 <th>
                     @Html.DisplayNameFor(model => model.DonGia)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.SoLuong)
                 </th>
-               
+                @*<th>
+                        @Html.DisplayNameFor(model => model.MoTa)
+                    </th>*@
                 <th>
                     @Html.DisplayNameFor(model => model.HinhAnhBia)
                 </th>
@@ -51,7 +56,9 @@ else
                 <th>
                     @Html.DisplayNameFor(model => model.Hang)
                 </th>
-              
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Loai)
+                    </th>*@
 
                 <th></th>
             </tr>
@@ -69,19 +76,25 @@ else
                     <td>
                         @Html.DisplayFor(modelItem => item.TheTich)
                     </td>
-                   
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.NgayNhap)
+                        </td>*@
                     <td>
                         @Html.DisplayFor(modelItem => item.DonGia)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.SoLuong)
                     </td>
-                  
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.MoTa)
+                        </td>*@
                     <td>
                         <img src="~/@item.HinhAnhBia" width="40" height="120" class="img-thumbnail text-center" />
                     </td>
 
-                 
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Loai.TenLoai)
+                        </td>*@
                     <td>
                         @Html.DisplayFor(modelItem => item.NoiSanXuat.XuatXu)
                     </td>

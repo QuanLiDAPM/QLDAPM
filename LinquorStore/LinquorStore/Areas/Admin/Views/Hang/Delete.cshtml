@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Hãng
+            <small>Xoá Thông Tin Hãng</small>
+        </h1>
+
+    }
+    @model LinquorStore.Models.Hang
+
+    <div>
+        <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Xoá Hãng</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TenHang)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TenHang)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <a>
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Xoá" class="btn btn-app" />
+            </a>   |
+            <a asp-action="Index">Quay lại</a>
+        </form>
+    </div>
+}

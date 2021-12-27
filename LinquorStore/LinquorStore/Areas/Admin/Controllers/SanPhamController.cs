@@ -20,9 +20,10 @@ namespace LinquorStore.Controllers
         private LiquorStoresContext db = new LiquorStoresContext();
         private readonly LiquorStoresContext _context;
 
-        public SanPhamController(LiquorStoresContext context)
+        public SanPhamController(LiquorStoresContext context, INotyfService notifyService)
         {
             _context = context;
+            _notifyService = notifyService;
         }
 
         // GET: SanPham
@@ -114,7 +115,7 @@ namespace LinquorStore.Controllers
                 sanPham.HinhAnhBia = Upload(file);
                 _context.SanPhams.Add(sanPham);
                 await _context.SaveChangesAsync();
-                //_notifyService.Success("Thêm sản phẩm thành công");
+                _notifyService.Success("Thêm sản phẩm thành công");
                 return RedirectToAction(nameof(Index));
             }
             ViewData["HangId"] = new SelectList(_context.Hangs, "Id", "TenHang", sanPham.HangId);
@@ -161,13 +162,13 @@ namespace LinquorStore.Controllers
                     sanPham.HinhAnhBia = Upload(file);
                     _context.Update(sanPham);
                     await _context.SaveChangesAsync();
-                    _notifyService.Success("Cập nhật thành công");
+                    _notifyService.Success("Cập nhật thông tin thành công");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!SanPhamExists(sanPham.Id))
                     {
-                        _notifyService.Success("Có lỗi xảy ra");
+                        _notifyService.Error("Có lỗi xảy ra");
                         return NotFound();
                     }
                     else
@@ -212,6 +213,7 @@ namespace LinquorStore.Controllers
             var sanPham = await _context.SanPhams.FindAsync(id);
             _context.SanPhams.Remove(sanPham);
             await _context.SaveChangesAsync();
+            _notifyService.Success("Xoá sản phẩm thành công");
             return RedirectToAction(nameof(Index));
         }
 
