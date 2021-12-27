@@ -1,88 +1,103 @@
-﻿@model LinquorStore.Models.SanPham
-
-@{
-    ViewData["Title"] = "Delete";
-}
-
-<div class="card">
-    <div class="card-body">
-        <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Xoá sản phẩm</h4>
-        <hr />
-        <dl class="row">
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.TenSanPham)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.TenSanPham)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.NongDoCon)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.NongDoCon)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.TheTich)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.TheTich)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.NgayNhap)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.NgayNhap)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.DonGia)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.DonGia)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.SoLuong)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.SoLuong)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.MoTa)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.MoTa)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.HinhAnhBia)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.HinhAnhBia)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Hang)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Hang.TenHang)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Loai)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Loai.TenLoai)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.NoiSanXuat)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.NoiSanXuat.XuatXu)
-            </dd>
-        </dl>
-
-        <form asp-action="Delete">
-            <a >
-                <input type="hidden" asp-for="Id" />
-                <input type="submit" value="Xoá" class="btn btn-app" />
-            </a>   |
-            <a asp-action="Index">Quay lại</a>
-        </form>
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div class="d-flex justify-content-center">
+        Bạn chưa đăng nhập
     </div>
-</div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Sản Phẩm
+            <small>Sửa Thông Tin Sản Phẩm</small>
+        </h1>
+
+    }
+    @model LinquorStore.Models.SanPham
+
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Xoá sản phẩm</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TenSanPham)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TenSanPham)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NongDoCon)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NongDoCon)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TheTich)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TheTich)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NgayNhap)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NgayNhap)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.DonGia)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.DonGia)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.SoLuong)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.SoLuong)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.MoTa)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.MoTa)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.HinhAnhBia)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.HinhAnhBia)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Hang)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Hang.TenHang)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Loai)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Loai.TenLoai)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NoiSanXuat)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NoiSanXuat.XuatXu)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <a>
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="Xoá" class="btn btn-app" />
+                </a>   |
+                <a asp-action="Index">Quay lại</a>
+            </form>
+        </div>
+    </div>
+}

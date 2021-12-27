@@ -1,102 +1,105 @@
-﻿@model IEnumerable<LinquorStore.Models.SanPham>
-
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
 }
+else
+{
+    @section Slider {
 
-<p>
-    <a class="btn btn-create" asp-action="Create">Thêm Sản Phẩm</a>
-</p>
-<table id="example1" class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TenSanPham)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NongDoCon)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TheTich)
-            </th>
-            @*<th>
-            @Html.DisplayNameFor(model => model.NgayNhap)
-        </th>*@
-            <th>
-                @Html.DisplayNameFor(model => model.DonGia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SoLuong)
-            </th>
-            @*<th>
-            @Html.DisplayNameFor(model => model.MoTa)
-        </th>*@
-            <th>
-                @Html.DisplayNameFor(model => model.HinhAnhBia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NoiSanXuat)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Hang)
-            </th>
-            @*<th>
-            @Html.DisplayNameFor(model => model.Loai)
-        </th>*@
+        <h1>
+            Sản Phẩm
+            <small>Quản lí Sản Phẩm</small>
+        </h1>
 
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenSanPham)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NongDoCon)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TheTich)
-            </td>
-            @*<td>
-            @Html.DisplayFor(modelItem => item.NgayNhap)
-        </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.DonGia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoLuong)
-            </td>
-            @*<td>
-            @Html.DisplayFor(modelItem => item.MoTa)
-        </td>*@
-            <td>
-                <img src="~/@item.HinhAnhBia" width="40" height="120" class="img-thumbnail text-center" />
-            </td>
-            
-            @*<td>
-            @Html.DisplayFor(modelItem => item.Loai.TenLoai)
-        </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.NoiSanXuat.XuatXu)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Hang.TenHang)
-            </td>
-            <td class="text-right">
-                <a class="btn btn-edit" href=" @Url.Action("Edit", new { id = item.Id })">
-                    <i class="fa fa-edit"></i>
-                </a>
-                &ensp;
-                <a class="btn btn-del" asp-action="Delete" asp-route-id="@item.Id">
-                    <i class="fa fa-trash"></i>
-                </a>
-            </td>
-        
-        </tr>
-        }
-    </tbody>
-</table>
+    }
+
+    @model IEnumerable<LinquorStore.Models.SanPham>
+
+
+    <p>
+        <a class="btn btn-create" asp-action="Create">Thêm Sản Phẩm</a>
+    </p>
+    <table id="example1" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenSanPham)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NongDoCon)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TheTich)
+                </th>
+               
+                <th>
+                    @Html.DisplayNameFor(model => model.DonGia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SoLuong)
+                </th>
+               
+                <th>
+                    @Html.DisplayNameFor(model => model.HinhAnhBia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NoiSanXuat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Hang)
+                </th>
+              
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenSanPham)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NongDoCon)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TheTich)
+                    </td>
+                   
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DonGia)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoLuong)
+                    </td>
+                  
+                    <td>
+                        <img src="~/@item.HinhAnhBia" width="40" height="120" class="img-thumbnail text-center" />
+                    </td>
+
+                 
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NoiSanXuat.XuatXu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hang.TenHang)
+                    </td>
+                    <td class="text-right">
+                        <a class="btn btn-edit" href=" @Url.Action("Edit", new { id = item.Id })">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        &ensp;
+                        <a class="btn btn-del" asp-action="Delete" asp-route-id="@item.Id">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}

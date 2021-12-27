@@ -1,103 +1,112 @@
-﻿@model LinquorStore.Models.SanPham
-
-@{
-    ViewData["Title"] = "Thêm sản phẩm";
-}
-
-
-<div class="card">
-    <div class="card-body">
-        <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Thêm sản phẩm</h4>
-        <form asp-action="Create" enctype="multipart/form-data" method="post">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label asp-for="LoaiId" class="control-label">Loại</label>
-                        <select asp-for="LoaiId" class="form-control" asp-items="ViewBag.LoaiId"></select>
-                    </div>
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                        <label asp-for="NoiSanXuatId" class="control-label">Nơi Sản Xuất</label>
-                        <select asp-for="NoiSanXuatId" class="form-control" asp-items="ViewBag.NoiSanXuatId"></select>
-                    </div>
-                    <!-- /.form-group -->
-                </div>
-
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label asp-for="TenSanPham" class="control-label">Tên Sản Phẩm</label>
-                        <input asp-for="TenSanPham" class="form-control" />
-                        <span asp-validation-for="TenSanPham" class="text-danger"></span>
-                    </div>
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                        <label asp-for="NongDoCon" class="control-label">Nồng Độ Cồn</label>
-                        <input asp-for="NongDoCon" class="form-control" />
-                        <span asp-validation-for="NongDoCon" class="text-danger"></span>
-                    </div>
-                    <!-- /.form-group -->
-                </div>
-                <div class="col-md-3" style="display: inline;">
-                    <div class="form-group">
-                        <label asp-for="TheTich" class="control-label">Thể Tích</label>
-                        <input asp-for="TheTich" class="form-control" />
-                        <span asp-validation-for="TheTich" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="col-md-3" style="display: inline;">
-                    <div class="form-group">
-                        <label asp-for="SoLuong" class="control-label">Số Lượng</label>
-                        <input asp-for="SoLuong" class="form-control" />
-                        <span asp-validation-for="SoLuong" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                        <label asp-for="NgayNhap" class="control-label">Ngày Nhập</label>
-                        <input asp-for="NgayNhap" class="form-control" />
-                        <span asp-validation-for="NgayNhap" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                        <label asp-for="DonGia" class="control-label">Đơn Giá</label>
-                        <input asp-for="DonGia" class="form-control" />
-                        <span asp-validation-for="DonGia" class="text-danger"></span>
-                    </div>
-                    <!-- /.form-group -->
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label asp-for="MoTa" class="control-label">Mô Tả</label>
-                        <textarea asp-for="MoTa" class="form-control"></textarea>
-                        <span asp-validation-for="MoTa" class="text-danger"></span>
-                    </div>
-                    <!-- /.form-group -->
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label asp-for="HinhAnhBia" class="control-label"></label>
-                        <input type="file" name="file" />
-                        <span asp-validation-for="HinhAnhBia" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                        <input type="submit" value="Thêm" class="btn btn-primary" /> |
-                        <a asp-action="Index">Quay lại</a>
-                    </div>
-                </div>
-            </div>
-</form>
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div class="d-flex justify-content-center">
+        Bạn chưa đăng nhập
     </div>
-</div>
+}
+else
+{
+    @section Slider {
 
-@*<div>
-    <a asp-action="Index">Back to List</a>
-</div>*@
+        <h1>
+            Sản Phẩm
+            <small>Thêm Sản Phẩm</small>
+        </h1>
 
-@*@section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }*@
+    }
+    @model LinquorStore.Models.SanPham
+
+
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Thêm sản phẩm</h4>
+            <form asp-action="Create" enctype="multipart/form-data" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="LoaiId" class="control-label">Loại</label>
+                            <select asp-for="LoaiId" class="form-control" asp-items="ViewBag.LoaiId"></select>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label asp-for="NoiSanXuatId" class="control-label">Nơi Sản Xuất</label>
+                            <select asp-for="NoiSanXuatId" class="form-control" asp-items="ViewBag.NoiSanXuatId"></select>
+                        </div>
+                        <!-- /.form-group -->
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="TenSanPham" class="control-label">Tên Sản Phẩm</label>
+                            <input asp-for="TenSanPham" class="form-control" />
+                            <span asp-validation-for="TenSanPham" class="text-danger"></span>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label asp-for="NongDoCon" class="control-label">Nồng Độ Cồn</label>
+                            <input asp-for="NongDoCon" class="form-control" />
+                            <span asp-validation-for="NongDoCon" class="text-danger"></span>
+                        </div>
+                        <!-- /.form-group -->
+                    </div>
+                    <div class="col-md-3" style="display: inline;">
+                        <div class="form-group">
+                            <label asp-for="TheTich" class="control-label">Thể Tích</label>
+                            <input asp-for="TheTich" class="form-control" />
+                            <span asp-validation-for="TheTich" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="display: inline;">
+                        <div class="form-group">
+                            <label asp-for="SoLuong" class="control-label">Số Lượng</label>
+                            <input asp-for="SoLuong" class="form-control" />
+                            <span asp-validation-for="SoLuong" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label asp-for="NgayNhap" class="control-label">Ngày Nhập</label>
+                            <input asp-for="NgayNhap" class="form-control" />
+                            <span asp-validation-for="NgayNhap" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label asp-for="DonGia" class="control-label">Đơn Giá</label>
+                            <input asp-for="DonGia" class="form-control" />
+                            <span asp-validation-for="DonGia" class="text-danger"></span>
+                        </div>
+                        <!-- /.form-group -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="MoTa" class="control-label">Mô Tả</label>
+                            <textarea asp-for="MoTa" class="form-control"></textarea>
+                            <span asp-validation-for="MoTa" class="text-danger"></span>
+                        </div>
+                        <!-- /.form-group -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="HinhAnhBia" class="control-label"></label>
+                            <input type="file" name="file" />
+                            <span asp-validation-for="HinhAnhBia" class="text-danger"></span>
+                        </div>
+                        <br />
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <input type="submit" value="Thêm" class="btn btn-primary" /> |
+                            <a asp-action="Index">Quay lại</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  
+}

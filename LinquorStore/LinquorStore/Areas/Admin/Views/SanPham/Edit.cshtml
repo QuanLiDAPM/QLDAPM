@@ -1,14 +1,29 @@
-﻿@model LinquorStore.Models.SanPham
-
-@{
-    ViewData["Title"] = "Edit";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div class="d-flex justify-content-center">
+        Bạn chưa đăng nhập
+    </div>
 }
-<div class="row">
+else
+{
+    @section Slider {
+
+        <h1>
+            Sản Phẩm
+            <small>Sửa Thông Tin Sản phẩm</small>
+        </h1>
+
+    }
+
+    @model LinquorStore.Models.SanPham
+
+
+    <div class="row">
         <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Sửa sản phẩm</h4>
         <form asp-action="Edit" enctype="multipart/form-data" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="Id" />
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="LoaiId" class="control-label"></label>
@@ -63,30 +78,24 @@
                     <input asp-for="SoLuong" class="form-control" />
                     <span asp-validation-for="SoLuong" class="text-danger"></span>
                 </div>
+                <div class="form-group">
+                    <input type="submit" value="Lưu" class="btn btn-app" /> |
+                    <a asp-action="Index">Quay lại</a>
+                </div>
             </div>
-            @*<div class="form-group">
-            <label asp-for="MoTa" class="control-label"></label>
-            <input asp-for="MoTa" class="form-control" />
-            <span asp-validation-for="MoTa" class="text-danger"></span>
-        </div>*@
+
+           
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="HinhAnhBia" class="control-label"></label>
-                    <input asp-for="HinhAnhBia" class="form-control" />
+                    <input type="file" name="file" accept="image/jpg , image/jpeg, image/png" />
                     <span asp-validation-for="HinhAnhBia" class="text-danger"></span>
                 </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Lưu" class="btn btn-app" /> |
-                <a asp-action="Index">Quay lại</a>
-            </div>
+
 
         </form>
 
     </div>
 
-
-
-@*@section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }*@
+}
