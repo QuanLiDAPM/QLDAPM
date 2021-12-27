@@ -1,0 +1,75 @@
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Khách Hàng
+            <small>Thêm Khách Hàng</small>
+        </h1>
+
+    }
+    @model LinquorStore.Models.KhachHang
+
+    <hr />
+    <div class="row">
+
+        <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Thêm khách hàng</h4>
+        <form asp-action="Create" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="HoTen" class="control-label"></label>
+                    <input asp-for="HoTen" class="form-control" />
+                    <span asp-validation-for="HoTen" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NgaySinh" class="control-label"></label>
+                    <input asp-for="NgaySinh" class="form-control" />
+                    <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SoDienThoai" class="control-label"></label>
+                    <input asp-for="SoDienThoai" class="form-control" />
+                    <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Thêm" class="btn btn-primary" /> |
+                    <a asp-action="Index">Quay lại</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="TenDangNhap" class="control-label"></label>
+                    <input asp-for="TenDangNhap" class="form-control" />
+                    <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MatKhau" class="control-label"></label>
+                    <input asp-for="MatKhau" class="form-control" />
+                    <span asp-validation-for="MatKhau" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DiaChi" class="control-label"></label>
+                    <textarea asp-for="DiaChi" class="form-control"></textarea>
+                    <span asp-validation-for="DiaChi" class="text-danger"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    @*<div>
+            <a asp-action="Index">Back to List</a>
+        </div>*@
+
+    @*@section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }*@
+}
