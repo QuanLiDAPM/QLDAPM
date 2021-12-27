@@ -1,0 +1,108 @@
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Chi Tiết Đặt Hàng
+            <small>Chi tiết đơn hàng đã đặt</small>
+        </h1>
+
+    }
+    var donhang = (DatHang)ViewBag.pigg;
+
+
+    @model IEnumerable<LinquorStore.Models.DatHangChiTiet>
+    <table class="table  table-bordered text-center">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.SanPhamId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SoLuong)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DonGia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DatHang.TinhTrang)
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{ var stt = 1;
+                var tongtien = 0;
+                var tongsl = 0;
+            }
+            @foreach (var item in Model)
+            {
+                tongtien += item.SoLuong * item.DonGia;//xu ly code k in ra
+                tongsl += item.SoLuong;
+                <tr > 
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SanPham.TenSanPham)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoLuong)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DonGia) vnđ
+                    </td>
+                    <td>
+                        @if (item.DatHang.TinhTrang == null)
+                        {
+                            <span>Đơn hàng mới</span> }
+                        else if (item.DatHang.TinhTrang == 1)
+                        {
+                            <span>Đang xác nhận</span> }
+                        else if (item.DatHang.TinhTrang == 2)
+                        {
+                            <span>Đã hủy</span> }
+                        else if (item.DatHang.TinhTrang == 3)
+                        {
+                            <span>Đang đóng gói</span> }
+                        else if (item.DatHang.TinhTrang == 4)
+                        {
+                            <span>Đang gởi vận chuyển</span> }
+                        else if (item.DatHang.TinhTrang == 5)
+                        {
+                            <span>Đang chuyển</span> }
+                        else if (item.DatHang.TinhTrang == 6)
+                        {
+                            <span>Thất bại</span> }
+                        else if (item.DatHang.TinhTrang == 7)
+                        {
+                            <span>Đang hoàn trả</span> }
+                        else if (item.DatHang.TinhTrang == 8)
+                        {
+                            <span>Đã chuyển hoàn</span> }
+                        else
+                        {
+                            <span>Thành công</span>}
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+        <tr class="table table-borderless" style="background-color: #202940;">
+
+            <td style="border: none;text-align:left ">Tổng sản phẩm: </td>
+
+            <td style=" text-align: left;font-weight:bold ">@tongsl </td>
+        </tr>
+        <tr class="table table-borderless" style="background-color: #202940;">
+
+            <td colspan="1" style="border: none; text-align: left ">Tổng tiền: </td>
+
+            <td colspan="8" style=" text-align: left;font-weight:bold ">@tongtien.ToString("N0") vnđ</td>
+        </tr>
+    </table>
+}

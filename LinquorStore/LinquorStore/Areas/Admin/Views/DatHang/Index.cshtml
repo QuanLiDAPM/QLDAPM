@@ -1,0 +1,123 @@
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Hãng
+            <small>Quản Lí Hãng</small>
+        </h1>
+
+    }
+
+    @model IEnumerable<LinquorStore.Models.DatHang>
+
+    <table id="example1" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DienThoaiGiaoHang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DiaChiGiaoHang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NgayDatHang)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.KhachHang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TaiKhoan)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TinhTrang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NgayXacNhan)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DuKienNgayNhan)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DienThoaiGiaoHang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChiGiaoHang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayDatHang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KhachHang.HoTen)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaiKhoan.TenDangNhap)
+                </td>
+                <td>
+                    @if (item.TinhTrang == null)
+                    {
+                        <span>Đơn hàng mới</span> }
+                    else if (item.TinhTrang == 1)
+                    {
+                        <span>Đang xác nhận</span> }
+                    else if (item.TinhTrang == 2)
+                    {
+                        <span>Đã hủy</span> }
+                    else if (item.TinhTrang == 3)
+                    {
+                        <span>Đang đóng gói</span> }
+                    else if (item.TinhTrang == 4)
+                    {
+                        <span>Đang gởi vận chuyển</span> }
+                    else if (item.TinhTrang == 5)
+                    {
+                        <span>Đang chuyển</span> }
+                    else if (item.TinhTrang == 6)
+                    {
+                        <span>Thất bại</span> }
+                    else if (item.TinhTrang == 7)
+                    {
+                        <span>Đang hoàn trả</span> }
+                    else if (item.TinhTrang == 8)
+                    {
+                        <span>Đã chuyển hoàn</span> }
+                    else
+                    {
+                        <span>Thành công</span>}
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayXacNhan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DuKienNgayNhan)
+                </td>
+                <td class="text-right">
+                    <a class="btn btn-edit" href=" @Url.Action("Edit", new { id = item.Id })">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                    &ensp;
+                    <a class="btn btn-det" href='@($"/Admin/DatHangChiTiet/Index?IdDonHang={item.Id}")'><i class="fa fa-info"></i></a>
+                    <a class="btn btn-del" asp-action="Delete" asp-route-id="@item.Id">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}

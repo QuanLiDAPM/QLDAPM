@@ -1,0 +1,105 @@
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Đặt Hàng
+            <small>Quản Lí Đặt Hàng</small>
+        </h1>
+
+    }
+    @model LinquorStore.Models.DatHang
+
+
+    <hr />
+    <div class="row">
+        <h4 class="card-title text-center" style="color:#c71111; font-size:27px;">Sửa Đơn Đặt</h4>
+        <form asp-action="Edit" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            @*<div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="TaiKhoanId" class="control-label"></label>
+                    <select asp-for="TaiKhoanId" class="form-control" asp-items="ViewBag.TaiKhoanId"></select>
+                    <span asp-validation-for="TaiKhoanId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KhachHangId" class="control-label"></label>
+                    <select asp-for="KhachHangId" class="form-control" asp-items="ViewBag.KhachHangId"></select>
+                    <span asp-validation-for="KhachHangId" class="text-danger"></span>
+                </div>
+            </div>*@
+            @*<div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="DienThoaiGiaoHang" class="control-label"></label>
+                    <input asp-for="DienThoaiGiaoHang" class="form-control" />
+                    <span asp-validation-for="DienThoaiGiaoHang" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DiaChiGiaoHang" class="control-label"></label>
+                    <input asp-for="DiaChiGiaoHang" class="form-control" />
+                    <span asp-validation-for="DiaChiGiaoHang" class="text-danger"></span>
+                </div>
+            </div>*@
+        <div class="col-md-6">
+            @*<div class="form-group">
+            <label asp-for="NgayDatHang" class="control-label"></label>
+            <input asp-for="NgayDatHang" class="form-control" />
+            <span asp-validation-for="NgayDatHang" class="text-danger"></span>
+        </div>*@
+            <div class="form-group">
+                <label asp-for="NgayXacNhan" class="control-label"></label>
+                <input asp-for="NgayXacNhan" class="form-control" />
+                <span asp-validation-for="NgayXacNhan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-app" /> |
+                <a asp-action="Index">Quay lại</a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="DuKienNgayNhan" class="control-label"></label>
+                <input asp-for="DuKienNgayNhan" class="form-control" />
+                <span asp-validation-for="DuKienNgayNhan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TinhTrang" class="control-label"></label>
+
+                @Html.DropDownListFor(model => model.TinhTrang, new SelectList(new[] {
+                    new SelectListItem { Value = null, Text = "Đơn hàng mới"},
+                    new SelectListItem { Value = "1", Text = "Đang xác nhận"},
+                    new SelectListItem { Value = "2", Text = "Đã hủy"},
+                    new SelectListItem { Value = "3", Text = "Đang đóng gói"},
+                    new SelectListItem { Value = "4", Text = "Đang gởi vận chuyển"},
+                    new SelectListItem { Value = "5", Text = "Đang chuyển"},
+                    new SelectListItem { Value = "6", Text = "Thất bại"},
+                    new SelectListItem { Value = "7", Text = "Đang hoàn trả"},
+                    new SelectListItem { Value = "8", Text = "Đã chuyển hoàn"},
+                    new SelectListItem { Value = "9", Text = "Thành công"},
+                }, "Value", "Text"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.TinhTrang, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+            
+        </form>
+    </div>
+
+
+    @*<div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }*@
+}
