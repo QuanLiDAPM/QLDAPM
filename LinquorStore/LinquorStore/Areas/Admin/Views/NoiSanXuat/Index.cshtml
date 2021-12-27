@@ -1,0 +1,53 @@
+﻿@using Microsoft.AspNetCore.Http
+@if (@Context.Session.GetString("_Id") == null)
+{
+    <div style=" display: flex; align-content: space-between; justify-content: center;">
+        <h1>Bạn chưa đăng nhập</h1>
+    </div>
+}
+else
+{
+    @section Slider {
+
+        <h1>
+            Nơi Sản Xuất
+            <small>Quản lí Nơi Sản Xuất</small>
+        </h1>
+
+    }
+    @model IEnumerable<LinquorStore.Models.NoiSanXuat>
+
+
+    <p>
+        <a class="btn btn-create" asp-action="Create">Thêm Nơi Sản Xuất</a>
+    </p>
+    <table id="example1" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.XuatXu)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.XuatXu)
+                    </td>
+                    <td class="text-center">
+                        <a class="btn btn-edit" href=" @Url.Action("Edit", new { id = item.Id })">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        &ensp;
+                        <a class="btn btn-del" asp-action="Delete" asp-route-id="@item.Id">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
